@@ -10,18 +10,18 @@ public class AnimController : MonoBehaviour
     Vector3 moveDir = Vector3.zero;
     CharacterController controller;
     Animator animator;
+    Rigidbody rig;
   
     void Start()
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
+        rig = GetComponent<Rigidbody>();
     }
 
     
     void Update()
     {
-        if (controller.isGrounded) {
-            //idk
-        }
+        animator.SetFloat("Speed", rig.velocity.magnitude);
     }
 }
