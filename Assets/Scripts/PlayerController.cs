@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
-                //MOVE OUR AGENT
                 agent.SetDestination(hit.point);
+                
             }
         }
     }

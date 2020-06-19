@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451970, guid: a4479a1e65fde3d45b9559d6cfc2542c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 451970, guid: a4479a1e65fde3d45b9559d6cfc2542c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -238,6 +238,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4479a1e65fde3d45b9559d6cfc2542c, type: 3}
+--- !u!1 &579634539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100022, guid: 1d561ab794bc05b44aa243d39691c790,
+    type: 3}
+  m_PrefabInstance: {fileID: 1868706409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &579634540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579634539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219ac2c71f3e37c4c81507b60683b947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,3 +623,16 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1995429667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995429664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78e3d17aef2ec4b95d7a31f9b80a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1995429666}

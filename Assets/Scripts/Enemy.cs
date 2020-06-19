@@ -15,4 +15,13 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
+    public Vector3 EnemyCoor()
+    {
+        float xVal = transform.position.x;
+        float yVal = transform.position.y;
+        float zVal = transform.position.z;
+        Vector3 coordinates = new Vector3(xVal, yVal, zVal);
+        return coordinates;
+    }
 }
