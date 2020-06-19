@@ -44,7 +44,7 @@ Vector3 getClosest()
                 Math.Pow(objectArray[i].transform.position.x - this.transform.position.x, 2)+
                  Math.Pow(objectArray[i].transform.position.y - this.transform.position.y,2) + 
                  Math.Pow(objectArray[i].transform.position.z - this.transform.position.z, 2));
-            print(distance);
+            
 
             if(distance < minVal)
             {
