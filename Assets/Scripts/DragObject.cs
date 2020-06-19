@@ -19,8 +19,10 @@ public class DragObject : MonoBehaviour
 
     Vector3 GetMouseAsWorldPoint()
     {
-        Vector3 mousePoint = new Vector3 (Input.mousePosition.x, 1.1f, Input.mousePosition.z);
-        mousePoint.z = mZCoord;
+        Vector3 mousePoint = Input.mousePosition;
+        mousePoint.z = mousePoint.y;
+        mousePoint.y = 1.1f;
+        
 
        // print("mouse point:" + mousePoint);
 
@@ -30,7 +32,7 @@ public class DragObject : MonoBehaviour
     private void OnMouseDrag()
     {
        // print("mouse Dragging called");
-        transform.position = GetMouseAsWorldPoint() + mOffset;
+        transform.position = new Vector3 (GetMouseAsWorldPoint().x , 1.1f, GetMouseAsWorldPoint().z / 10);
     }
 
 }
