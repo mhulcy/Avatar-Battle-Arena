@@ -22,6 +22,7 @@ public class AnimController : MonoBehaviour
     
     void Update()
     {
+        Debug.Log(rig.velocity.magnitude);
         animator.SetFloat("Speed", rig.velocity.magnitude);
     }
 }
