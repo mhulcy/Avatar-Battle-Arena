@@ -3469,7 +3469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 159832, guid: 565f773a129c28e48a90f45935de2b23, type: 3}
       propertyPath: m_Name
-      value: Character_Geisha_Brown
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 468444, guid: 565f773a129c28e48a90f45935de2b23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3535,6 +3535,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6db8b64fa548f49a3638bd0f8e1c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &982758124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982758120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &987606731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481890, guid: 537a3c36645b45141a5e7efa507bb6dc,
