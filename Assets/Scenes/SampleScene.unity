@@ -515,7 +515,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100022, guid: 1d561ab794bc05b44aa243d39691c790, type: 3}
       propertyPath: m_Name
-      value: Character_Ninja
+      value: Enemy_Piece
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 1d561ab794bc05b44aa243d39691c790, type: 3}
       propertyPath: m_LocalPosition.x

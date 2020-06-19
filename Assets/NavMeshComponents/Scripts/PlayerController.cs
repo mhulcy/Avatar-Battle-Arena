@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public Camera cam;
 
-
     public NavMeshAgent agent;
+
     // Update is called once per frame
     void Update()
     {
