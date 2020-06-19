@@ -652,10 +652,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 90c0b6ae-8f29-4538-b6d0-bfa7e79b53b3
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Avatar Battle Arena (1)
+  organizationId: boishi
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
