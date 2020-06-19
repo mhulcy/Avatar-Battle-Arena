@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMoney : MonoBehaviour
 {
     public int playerMoney;
+    public Text moneyText;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerMoney = 100;   
+        playerMoney = 100;
+        moneyText.text = playerMoney.ToString();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class PlayerMoney : MonoBehaviour
     public void addMoney(int moneyToAdd)
     {
         playerMoney += moneyToAdd;
+        moneyText.text = playerMoney.ToString();
     }
 
     public void subtractMoney(int moneyToSubtract)
@@ -32,6 +37,7 @@ public class PlayerMoney : MonoBehaviour
         else
         {
             playerMoney -= moneyToSubtract;
+            moneyText.text = playerMoney.ToString();
         }
     }
 }
