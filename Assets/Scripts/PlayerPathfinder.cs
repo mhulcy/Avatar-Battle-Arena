@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerPathfinder : MonoBehaviour
-{
+{ 
     public NavMeshAgent agent;
     private Enemy _Enemy;
     private bool boolVal = true;
