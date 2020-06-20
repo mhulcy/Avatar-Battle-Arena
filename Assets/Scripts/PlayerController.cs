@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public NavMeshAgent agent;
 
     private bool playerBench = false;
+    bool bPressed = false;
 
     private void Start()
     {
@@ -36,38 +37,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (isSelected)
-        {
-            if (Input.GetMouseButtonUp(0))
-            {
 
-                playerBench = false;
-                _bench.unOccupy();
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit))
-                {
-                    this.transform.position = findBoard(hit.point);
-                    isSelected = false;
-                }
-                
-            }
-            else if (Input.GetKeyUp("b"))
-            {
-                if (!playerBench)
-                {
-                    sendToBench();
-                }
 
-            }
-            
-        }
-        
 
 
     }
+
+
+
+
+
+
+
+    
+
+
 
     Vector3 findBoard(Vector3 currPos)
     {
@@ -95,11 +80,53 @@ public class PlayerController : MonoBehaviour
 
     void OnMouseDown()
     {
+        bool canBreak = false;
+        bool mouseClick = false;
+        bPressed = false;
+        bool mouseDown = true;
+
+        int iterations = 0;
+
+        while (mouseDown) {
+            print("looping");
+            if (Input.GetKeyUp("b"))
+            {
+
+                bPressed = true;
+                canBreak = true;
+                mouseDown = false;
+
+            }
+        }
+
+        if (bPressed)
+        {
+
+            if (!playerBench)
+            {
+                sendToBench();
+            }
+        }
+       else if (mouseClick)
+        {
+
+            playerBench = false;
+            _bench.unOccupy();
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                this.transform.position = findBoard(hit.point);
+                isSelected = false;
+            }
+
+        }
+       
+
         
-        
-            //print("Got into if statement");
-            isSelected = true;
-        
+
+
     }
 
     void sendToBench()
