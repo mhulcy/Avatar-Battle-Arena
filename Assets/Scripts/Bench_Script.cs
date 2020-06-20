@@ -21,11 +21,13 @@ public class Bench_Script : MonoBehaviour
 
     public void occupy()
     {
+        print("occupy");
         isOccupied = true;
     }
 
     public void unOccupy()
     {
+        print("unOccupy");
         isOccupied = false;
     }
 
