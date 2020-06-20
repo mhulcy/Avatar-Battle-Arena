@@ -6867,6 +6867,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2082634088, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5709722616449256144, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Enabled
@@ -28656,15 +28660,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy_Piece
       objectReference: {fileID: 0}
-    - target: {fileID: 7326122282057715643, guid: 6f10a5da9f4556f419983fa31031b62e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326122282057715643, guid: 6f10a5da9f4556f419983fa31031b62e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f10a5da9f4556f419983fa31031b62e, type: 3}
