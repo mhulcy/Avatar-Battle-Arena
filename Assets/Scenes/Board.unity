@@ -6871,10 +6871,6 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2082634088, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5709722616449256144, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Enabled
@@ -10369,6 +10365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9947070d2237a3448ee3dbacc7a3a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  elementPrefab: {fileID: 0}
   agent: {fileID: 589171447}
 --- !u!65 &589171450
 BoxCollider:
