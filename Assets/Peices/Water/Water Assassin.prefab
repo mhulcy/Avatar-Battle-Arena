@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 1450388589}
   - component: {fileID: 1450388590}
   - component: {fileID: 1450388591}
+  - component: {fileID: 8522444084456096907}
   m_Layer: 0
   m_Name: Water Assassin
   m_TagString: Untagged
@@ -650,6 +651,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1450388590}
+--- !u!114 &8522444084456096907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3389150756822332364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00a3a5fb63c2734eb283c2fdf442664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterAssassin: {fileID: 3389150756822332364}
 --- !u!1 &3389150756822333578
 GameObject:
   m_ObjectHideFlags: 0
