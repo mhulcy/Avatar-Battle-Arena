@@ -2121,6 +2121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4137001748852805368}
   - component: {fileID: 4137001748845820566}
+  - component: {fileID: -3159890496308041256}
   - component: {fileID: 623853583}
   - component: {fileID: 623853584}
   - component: {fileID: 623853587}
@@ -2176,6 +2177,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3159890496308041256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137001748853122460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde9154db9d9b834e829049e2afc0845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EarthWarrior: {fileID: 4137001748853122460}
 --- !u!114 &623853583
 MonoBehaviour:
   m_ObjectHideFlags: 0

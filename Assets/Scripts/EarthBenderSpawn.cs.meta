@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ddf005ec5f02e6543b93d9c2f88c1d92
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EarthBender: {fileID: 1366204537301040084, guid: 9146a590a10021e48a364c817ce16d8e,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

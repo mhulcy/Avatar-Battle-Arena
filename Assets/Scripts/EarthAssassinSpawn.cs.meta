@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4672ea1c69b20804cbf18b64896ef006
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EarthAssassin: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

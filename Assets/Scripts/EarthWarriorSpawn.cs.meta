@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: bde9154db9d9b834e829049e2afc0845
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - EarthWarrior: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
