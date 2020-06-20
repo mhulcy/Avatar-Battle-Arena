@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimControllerMelee : MonoBehaviour
+public class Board_block : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    private Animator animator;
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    private void OnMouseDown()
+    {
+
+
+
     }
 }
