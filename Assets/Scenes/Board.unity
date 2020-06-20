@@ -9290,7 +9290,7 @@ PrefabInstance:
     - target: {fileID: 7128878733178503350, guid: db8519fc5261b894484aa1a8d6488f4c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 848.5
+      value: 837
       objectReference: {fileID: 0}
     - target: {fileID: 7128878733178503350, guid: db8519fc5261b894484aa1a8d6488f4c,
         type: 3}
@@ -9335,7 +9335,7 @@ PrefabInstance:
     - target: {fileID: 7128878733178503350, guid: db8519fc5261b894484aa1a8d6488f4c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -196
+      value: -199
       objectReference: {fileID: 0}
     - target: {fileID: 7128878733178503350, guid: db8519fc5261b894484aa1a8d6488f4c,
         type: 3}
@@ -9416,8 +9416,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      objectReference: {fileID: 6499450724694432230, guid: 6f10a5da9f4556f419983fa31031b62e,
         type: 3}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: spawnFireWarrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8519fc5261b894484aa1a8d6488f4c, type: 3}
 --- !u!224 &585330473 stripped
@@ -11832,6 +11842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e90d5afad22a44185b4af97370aa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EarthWarrior: {fileID: 0}
 --- !u!1001 &833669908
 PrefabInstance:
   m_ObjectHideFlags: 0
