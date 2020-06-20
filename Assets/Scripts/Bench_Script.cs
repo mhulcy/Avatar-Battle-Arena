@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bench_Script : MonoBehaviour
 {
+    [SerializeField]
     private bool isOccupied = false;
 
     // Start is called before the first frame update
@@ -18,17 +19,17 @@ public class Bench_Script : MonoBehaviour
         
     }
 
-    void occupy()
+    public void occupy()
     {
         isOccupied = true;
     }
 
-    void unOccupy()
+    public void unOccupy()
     {
         isOccupied = false;
     }
 
-    bool occupancy()
+   public bool occupancy()
     {
         return isOccupied;
     }
