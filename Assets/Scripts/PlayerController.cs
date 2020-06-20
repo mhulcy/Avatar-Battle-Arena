@@ -39,23 +39,15 @@ public class PlayerController : MonoBehaviour
         
         if (isSelected)
         {
-            if (playerBench)
-            {
-                playerBench = false;
-                _bench.unOccupy();
-
-            }
-
-
+          
             if (Input.GetMouseButtonUp(0))
             {
+                _bench.unOccupy();
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    
-
                     this.transform.position = findBoard(hit.point);
                     isSelected = false;
                 }
@@ -64,9 +56,12 @@ public class PlayerController : MonoBehaviour
             else if (Input.GetKeyUp("b"))
             {
                 _bench.unOccupy();
-                playerBench = false;
-                sendToBench();
-                isSelected = false;
+                if (!_bench.occupancy())
+                {
+                    playerBench = false;
+                    sendToBench();
+                    isSelected = false;
+                }
 
             }
             
@@ -128,6 +123,7 @@ public class PlayerController : MonoBehaviour
                 benches[i].occupy();
                 isBenched = true;
                 _bench = benches[i];
+                _bench.occupy();
                 playerBench = true;
             }
         }
