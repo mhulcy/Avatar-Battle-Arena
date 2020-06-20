@@ -15,11 +15,12 @@ public class FireWarriorAnimator : MonoBehaviour
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         rig = GetComponent<Rigidbody>();
-        OgPosition = this.transform.position;
+        //OgPosition = this.transform.position;
     }
 
 
     void Update() {
+        speed = rig.velocity.magnitude;
         print(rig.velocity.magnitude);
         //animator.SetFloat("Speed", rig.velocity.magnitude);
         /*
@@ -29,7 +30,7 @@ public class FireWarriorAnimator : MonoBehaviour
             OgPosition = transform.position;
         }
         */
-        if (OgPosition != this.transform.position) {
+        if (speed < .5) {
             animator.SetBool("IsWalking", true);
             OgPosition = transform.position;
         }
