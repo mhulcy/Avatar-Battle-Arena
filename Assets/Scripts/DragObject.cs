@@ -12,7 +12,7 @@ public class DragObject : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            
+            print("cclick");
         }
        
     }

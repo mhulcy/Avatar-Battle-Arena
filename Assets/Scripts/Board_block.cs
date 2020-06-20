@@ -13,6 +13,13 @@ public class Board_block : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    private void OnMouseDown()
+    {
+
+
+
     }
 }

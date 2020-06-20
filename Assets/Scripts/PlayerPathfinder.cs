@@ -35,12 +35,13 @@ public class PlayerPathfinder : MonoBehaviour
     Vector3 findEnemy()
     {
         double min = 100000;
-        Vector3 nearestEnemy = new Vector3(1f, 1f, 1f);
+        Vector3 nearestEnemy = this.transform.position;
         double value;
 
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
         for (int i = 0; i < gameObjects.Length; ++i)
         {
+            print("found enemy");
             value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
                 Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) + 
                 Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
@@ -50,6 +51,7 @@ public class PlayerPathfinder : MonoBehaviour
                 nearestEnemy = new Vector3(gameObjects[i].transform.position.x, gameObjects[i].transform.position.y, gameObjects[i].transform.position.z);
             }
         }
+        
         return nearestEnemy;
     }
 
