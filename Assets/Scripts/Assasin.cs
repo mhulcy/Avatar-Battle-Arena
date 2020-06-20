@@ -48,11 +48,12 @@ public class Assasin : MonoBehaviour
         target = findEnemy();
         if (target != null)
         {
+           
             targetCoords = target.transform.position;
-            // anim.SetBool("IsWalking", true);
+            anim.SetBool("IsWalking", true);
             if (findDistance(this.transform.position, targetCoords) < range)
             {
-                //   anim.SetBool("IsWalking", false);
+                anim.SetBool("IsWalking", false);
                 agent.isStopped = true;
                 timer -= Time.deltaTime;
                 if (timer < 0)
@@ -75,7 +76,7 @@ public class Assasin : MonoBehaviour
 
     int attack()
     {
-        // anim.SetTrigger("PunchTrigger");
+        anim.SetTrigger("PunchTrigger");
         int amount;
         print("attacks");
         timer = 1f;
