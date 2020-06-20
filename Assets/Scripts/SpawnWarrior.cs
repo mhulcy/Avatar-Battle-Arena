@@ -1,18 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class SpawnWarrior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   public void spawnWarrior()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Instantiate(Character_Samurai_Grunt, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }
