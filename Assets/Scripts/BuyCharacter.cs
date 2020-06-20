@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class BuyCharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject BuyerOne;
 
-    // Update is called once per frame
-    void Update()
+    public void BuyCharacter()
     {
-        
+       
     }
 }

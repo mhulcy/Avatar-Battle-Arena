@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CharacterInstantiation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string[] peiceNames = new String[] {"Water Warrior", "Water Assassin", "Water Bender",
+    "Earth Warrior","Earth Asssassin","Earth Bender","Fire Warrior","Fire Assassin","Fire Bender","Air Warrior","Air Assassin","Air Bender"};
+
+
+
+    Instantiate()
+    
+
 }
