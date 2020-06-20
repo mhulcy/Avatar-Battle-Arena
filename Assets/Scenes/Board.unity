@@ -6863,11 +6863,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2082634088, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5709722616449256144, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5709722616449256144, guid: f4bbe488023a3bb4faa87d35377e90c1,
+        type: 3}
+      propertyPath: elementPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: 756d99540142b5e4a8d174e18a6310d9, type: 3}
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Name
@@ -6936,7 +6945,7 @@ PrefabInstance:
     - target: {fileID: 7886486155355002605, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}

@@ -19,7 +19,10 @@ public class Bender : MonoBehaviour
 
     Animator anim;
     GameObject target;
+    public GameObject projectile;
 
+
+    public GameObject elementPrefab;
 
     public NavMeshAgent agent;
 
@@ -33,21 +36,28 @@ public class Bender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
 
 
         target = findEnemy();
         if (target != null)
         {
             targetCoords = target.transform.position;
-           // anim.SetBool("IsWalking", true);
+            anim.SetBool("IsWalking", true);
             if (findDistance(this.transform.position, targetCoords) < range)
             {
-             //   anim.SetBool("IsWalking", false);
+                anim.SetBool("IsWalking", false);
                 agent.isStopped = true;
                 timer -= Time.deltaTime;
                 if (timer < 0)
                 {
                     print(attack());
+                    
+                       
+                        //if (projectile.transform.position == target.transform.position)
+                            //Destroy(projectile);
+                    
                 }
             }
             else
@@ -58,6 +68,8 @@ public class Bender : MonoBehaviour
             }
         }
 
+        
+
     }
 
 
@@ -65,9 +77,14 @@ public class Bender : MonoBehaviour
 
     int attack()
     {
-       // anim.SetTrigger("PunchTrigger");
+        anim.SetTrigger("PunchTrigger");
+        projectile = Instantiate(elementPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
+
+        projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10);
+        //Destroy(projectile);
+
         int amount;
-        print("attacks");
+        //print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
