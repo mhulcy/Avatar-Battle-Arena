@@ -4870,7 +4870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1928651905}
   agent: {fileID: 982758125}
 --- !u!4 &987606731 stripped
 Transform:
