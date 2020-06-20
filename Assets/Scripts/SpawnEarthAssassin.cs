@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class SpawnEarthAssassin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject EarthAssassin;
 
-    // Update is called once per frame
-    void Update()
+    public void spawnEarthAssassin()
     {
-        
+        GameObject Sokka = Instantiate(EarthAssassin, new Vector3(1, 1, 1), Quaternion.identity);
     }
 }
