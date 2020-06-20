@@ -39,8 +39,13 @@ public class PlayerController : MonoBehaviour
         
         if (isSelected)
         {
+            if (playerBench)
+            {
+                playerBench = false;
+                _bench.unOccupy();
 
-           
+            }
+
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -49,15 +54,8 @@ public class PlayerController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    if (playerBench)
-                    {
-                        playerBench = false;
-                        _bench.unOccupy();
+                    
 
-                    }
-
-                    //Find a way to get rid of this line
-                   // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
                     isSelected = false;
                 }
