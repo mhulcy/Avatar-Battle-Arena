@@ -9,9 +9,29 @@ public class PlayerController : MonoBehaviour
 {
     private bool isSelected = false;
 
-    public Camera cam;
+    private Camera cam;
+
+    private Bench_Script _bench;
 
     public NavMeshAgent agent;
+
+    private bool playerBench = false;
+
+    private void Start()
+    {
+        cam = Camera.main;
+        _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
+        if(_bench == null)
+        {
+            Debug.Log("The bench messed up");
+        }
+        if(playerBench == false)
+        {
+            sendToBench();
+        }
+    }
+
+
 
     // Update is called once per frame
     void Update()
@@ -19,22 +39,39 @@ public class PlayerController : MonoBehaviour
         
         if (isSelected)
         {
-            if (Input.GetMouseButtonDown(1))
+
+           
+
+            if (Input.GetMouseButtonUp(0))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit))
                 {
+                    if (playerBench)
+                    {
+                        playerBench = false;
+                        _bench.unOccupy();
 
+                    }
 
                     //Find a way to get rid of this line
                    // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
-                    
+                    isSelected = false;
                 }
-                isSelected = false;
+                
             }
+            else if (Input.GetKeyUp("b"))
+            {
+                _bench.unOccupy();
+                playerBench = false;
+                sendToBench();
+                isSelected = false;
+
+            }
+            
         }
         
 
@@ -69,8 +106,34 @@ public class PlayerController : MonoBehaviour
     {
         
         
-            print("Got into if statement");
+            //print("Got into if statement");
             isSelected = true;
         
     }
+
+    void sendToBench()
+    {
+        int sendX = 0;
+        int sendZ = -2;
+        int sendY = 0;
+        int count = 0;
+        bool isBenched = false;
+
+       
+       GameObject[] temp =  GameObject.FindGameObjectsWithTag("Bench");
+        Bench_Script[] benches = new Bench_Script[temp.Length];
+        for (int i = 0; i < temp.Length; i++){
+            benches[i] = temp[i].GetComponent<Bench_Script>();
+            if (!benches[i].occupancy() && !isBenched)
+            {
+                this.transform.position = benches[i].transform.position;
+                benches[i].occupy();
+                isBenched = true;
+                _bench = benches[i];
+                playerBench = true;
+            }
+        }
+       
+    }
+
 }
