@@ -19490,17 +19490,17 @@ PrefabInstance:
     - target: {fileID: 4314592290045513841, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.15294118
+      value: 0.8700605
       objectReference: {fileID: 0}
     - target: {fileID: 4314592290045513841, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4156863
+      value: 0.8867924
       objectReference: {fileID: 0}
     - target: {fileID: 4314592290045513841, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.1137255
+      value: 0.8821507
       objectReference: {fileID: 0}
     - target: {fileID: 4314592290045513843, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
@@ -19515,7 +19515,7 @@ PrefabInstance:
     - target: {fileID: 4314592290045513843, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4314592290045513843, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
@@ -19575,7 +19575,7 @@ PrefabInstance:
     - target: {fileID: 4314592290045513843, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4314592290045513843, guid: baf8abacef080a54687653ee61582d8f,
         type: 3}
@@ -23496,9 +23496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Refresh
-
-    r'
+  m_Text: Refresh
 --- !u!222 &1722461403
 CanvasRenderer:
   m_ObjectHideFlags: 0
