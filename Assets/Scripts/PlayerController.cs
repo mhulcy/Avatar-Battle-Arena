@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
                 }
                 isSelected = false;
             }
+            else if (Input.GetKeyUp("b"))
+            {
+                sendToBench();
+            }
         }
         
 
@@ -69,8 +73,25 @@ public class PlayerController : MonoBehaviour
     {
         
         
-            print("Got into if statement");
+            //print("Got into if statement");
             isSelected = true;
         
     }
+
+    void sendToBench()
+    {
+        int sendX = 0;
+        int sendZ = -2;
+        int sendY = 0;
+        int count = 0;
+
+       GameObject[] benches =  GameObject.FindGameObjectsWithTag("Bench");
+        for(int i = 0; i < benches.length; ++i)
+        {
+            if()
+        }
+
+
+    }
+
 }
