@@ -21,12 +21,11 @@ public class StateMachine : MonoBehaviour
     void Start()
     {
         state = State.TITLE;
-        SetupCombat();
     }
 
-    void SetupCombat()
+    void Update()
     {
-
+        
     }
 
 }
