@@ -9,18 +9,25 @@ public class PlayerController : MonoBehaviour
 {
     private bool isSelected = false;
 
-    public Camera cam;
+    private Camera cam;
 
     private Bench_Script _bench;
 
     public NavMeshAgent agent;
 
+    private bool playerBench = false;
+
     private void Start()
     {
+        cam = Camera.main;
         _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
         if(_bench == null)
         {
             Debug.Log("The bench messed up");
+        }
+        if(playerBench == false)
+        {
+            sendToBench();
         }
     }
 
@@ -39,7 +46,12 @@ public class PlayerController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
+                    if (playerBench)
+                    {
+                        playerBench = false;
+                        _bench.unOccupy();
 
+                    }
 
                     //Find a way to get rid of this line
                    // this.transform.position = hit.point;
@@ -50,8 +62,11 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKeyUp("b"))
             {
+                _bench.unOccupy();
+                playerBench = false;
                 sendToBench();
                 isSelected = false;
+
             }
         }
         
@@ -110,6 +125,8 @@ public class PlayerController : MonoBehaviour
                 this.transform.position = benches[i].transform.position;
                 benches[i].occupy();
                 isBenched = true;
+                _bench = benches[i];
+                playerBench = true;
             }
         }
        
