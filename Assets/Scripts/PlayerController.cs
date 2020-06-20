@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
-                agent.SetDestination(hit.point);
+                this.transform.position = hit.point;
                 
             }
         }

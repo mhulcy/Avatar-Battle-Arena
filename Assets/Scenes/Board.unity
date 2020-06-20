@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -190,6 +194,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3754557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6268127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1223548624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6268128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &17727781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +223,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -263,6 +290,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.03
@@ -403,6 +438,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 20873730}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &21096858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2063472768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &21096859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21096858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &28671119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,6 +467,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -477,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -529,6 +591,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 47211971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &48574684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 28671119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &48574685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48574684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &61322499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -539,6 +620,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -615,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -684,6 +773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -746,6 +839,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -822,6 +919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -885,6 +986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -937,6 +1042,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 100751215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &112886294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 431391439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &112886295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112886294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1 &115150713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1137,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1127,6 +1255,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34a675b8d0a8d1942bf90a99edbc6178, type: 3}
+--- !u!1 &150614533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 344317297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &150614534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150614533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &164972239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1137,6 +1284,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1190,6 +1341,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 164972239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &165542515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 275968234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &165542516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165542515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &165542518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165542515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &168465290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,6 +1386,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1358,6 +1548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.03
@@ -1422,6 +1616,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 184245005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &208057551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 791694330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &208057552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208057551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &225720715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1432,6 +1645,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,6 +1708,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2117370126}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &250019595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 20873730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &250019596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250019595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &250019598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250019595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &251180131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 772170493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &251180132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251180131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &263134432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 2057330440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &263134433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263134432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &267858834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1788807029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &267858835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267858834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &268084621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1559,6 +1868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.01
@@ -1623,6 +1936,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 275968234}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &329000154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1287314434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &329000155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329000154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &344317297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1633,6 +1965,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1686,12 +2022,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 344317297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &354333125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1847571076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &354333126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354333125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!4 &370021477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 263c79b67299cb047a9649f135611a9d,
     type: 3}
   m_PrefabInstance: {fileID: 1445894456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374621315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1398773683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &374621316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374621315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &392982435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1702,6 +2076,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1755,6 +2133,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 392982435}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &403493493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 1305356567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &403493494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403493493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &403493496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403493493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!4 &405585165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415850, guid: 18c0e8eb46512a548b9ca921ce99df0d,
@@ -1771,6 +2184,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1824,6 +2241,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 410969772}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &412676504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1905369787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &412676505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412676504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &419878756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1834,6 +2270,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1887,6 +2327,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 419878756}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &422352929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 652055051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &422352930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422352929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &431391439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1897,6 +2356,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1966,6 +2429,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2111,6 +2578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -2163,6 +2634,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518397349}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &532427065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 1272072255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &532427066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532427065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &532427068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532427065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &532434505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1798936318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &532434506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532434505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &534469406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2173,6 +2698,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2249,6 +2778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -2301,6 +2834,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 545257370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &563279581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 168465290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &563279582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563279581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &563942678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2362,6 +2914,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eccd96fd5d470a4ebcf08d6be459c23, type: 3}
+--- !u!1 &572849980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 545257370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &572849981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572849980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &583889383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2372,6 +2943,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2425,6 +3000,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 583889383}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &592687544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 1074416045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &592687545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592687544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &592687547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592687544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &614981274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1930594185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &614981275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614981274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &615658933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2435,6 +3064,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2560,6 +3193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -2622,6 +3259,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2697,6 +3338,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2899,6 +3544,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c0e8eb46512a548b9ca921ce99df0d, type: 3}
+--- !u!1 &699206738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 908799314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &699206739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699206738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &712924753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1710817266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &712924754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712924753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &713055234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 127858320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &713055235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713055234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &753291796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2909,6 +3611,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2971,6 +3677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759518775}
+  - component: {fileID: 759518776}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -3005,6 +3712,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759518776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759518774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &768828429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 392982435}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &768828430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768828429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &772170493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3015,6 +3757,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3079,6 +3825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -3131,6 +3881,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 791694330}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &795045199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 615658933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &795045200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795045199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &811128807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1096094202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &811128808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811128807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &834155712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 583889383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &834155713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834155712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &837080528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3249,6 +4056,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b3885406e53cdf4d8fce05166e0899d, type: 3}
+--- !u!1 &843616356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1061979937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &843616357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843616356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &845649294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 628277692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &845649295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845649294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &876914333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1313922712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &876914334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876914333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!114 &876914336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876914333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &878740009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3259,6 +4139,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3324,6 +4208,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 878740009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &898834151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 17727781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &898834152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898834151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &908799314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3334,6 +4237,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3387,6 +4294,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 908799314}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &924881574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044833987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &924881575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924881574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &925450928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1305885749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &925450929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925450928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &929941737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1710199878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &929941738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929941737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &936203090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3397,6 +4361,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3462,6 +4430,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 936203090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &938644312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 419878756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &938644313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938644312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &967621077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 61322499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &967621078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967621077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &967621080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967621077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &982758119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3537,6 +4559,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6db8b64fa548f49a3638bd0f8e1c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &982758122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982758120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78e3d17aef2ec4b95d7a31f9b80a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 982758125}
 --- !u!65 &982758124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3592,6 +4627,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 487649155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1022205314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1489948981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1022205315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022205314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1044833987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3602,6 +4656,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3655,6 +4713,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1044833987}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1051837629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2032866294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1051837630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051837629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!4 &1061221070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 451384, guid: 65324a7a5178ed74298315e8b36fa9cd,
@@ -3671,6 +4748,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3724,6 +4805,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1061979937}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1061986108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 19233880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1061986109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061986108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1061986111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061986108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1063527845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +4849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1063527846}
+  - component: {fileID: 1063527847}
   m_Layer: 0
   m_Name: navMesh
   m_TagString: Untagged
@@ -3754,6 +4871,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063527847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063527845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df27b9289d1e8c4fb82e0df4f4673ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.06666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: db1dfab9698a7cd4b99ce0a188b53bb3, type: 2}
+--- !u!1 &1063792997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207827245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1063792998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063792997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!4 &1065114962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 436470, guid: eee7d30a1967a4b4283d35b0dbddc6d0,
@@ -3836,6 +5001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -3900,6 +5069,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1074416045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1091344961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1414630466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1091344962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091344961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1096094202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3910,6 +5098,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4043,6 +5235,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121217974}
   m_CullTransparentMesh: 0
+--- !u!1 &1139050322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 878740009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1139050323
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139050322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1139050325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139050322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &1153261504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 92461118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1153261505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153261504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1174623623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383784642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1174623624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174623623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1 &1181983269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4055,6 +5320,7 @@ GameObject:
   - component: {fileID: 1181983272}
   - component: {fileID: 1181983271}
   - component: {fileID: 1181983270}
+  - component: {fileID: 1181983274}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -4133,12 +5399,66 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181983269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8, y: -7.2, z: 16.5}
+  m_LocalPosition: {x: 7.8, y: -20, z: 16.5}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1181983274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181983269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &1183437043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1485003867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1183437044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183437043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1187105422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783364626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1187105423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187105422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1192689307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4149,6 +5469,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4202,6 +5526,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1192689307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1205276197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 470250018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1205276198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205276197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1205276200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205276197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1207827245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4212,6 +5571,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4265,6 +5628,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1207827245}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1209097333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 410969772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1209097334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209097333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1223548624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4275,6 +5657,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4429,6 +5815,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1240149165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 164972239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1240149166
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240149165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1242021948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4439,6 +5844,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4492,6 +5901,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1242021948}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1261693858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 100751215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1261693859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261693858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1264294618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4502,6 +5930,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4517,19 +5949,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -6.1053684e-20
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.008995537
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0000000010723515
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9999595
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_RootOrder
@@ -4541,7 +5973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -1.031
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4565,6 +5997,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4640,6 +6076,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4771,6 +6211,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289540849}
   m_CullTransparentMesh: 0
+--- !u!1 &1292589051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1814066648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1292589052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292589051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1 &1296524635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +6333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -4949,6 +6412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -5011,6 +6478,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5225,6 +6696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -5277,6 +6752,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1383784642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393497956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 225720715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1393497957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393497956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1398773683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5287,6 +6781,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5340,6 +6838,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1398773683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1409849519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1192689307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1409849520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409849519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1414630466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5350,6 +6867,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5403,6 +6924,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1414630466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1439664046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1614073789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1439664047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439664046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1445894456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5552,6 +7092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -5610,6 +7154,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1583070250}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1484515539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1538881610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1484515540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484515539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1485003867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5620,6 +7183,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5684,6 +7251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -5736,6 +7307,76 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1489948981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1504221623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 936203090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1504221624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504221623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1504221626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504221623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &1510930895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 2019269222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1510930896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510930895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1510930898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510930895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1530010501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5746,6 +7387,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5809,6 +7454,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6009,6 +7658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6073,6 +7726,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 268084621}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1683015662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 89167509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1683015663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683015662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1683015665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683015662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1710199878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6083,6 +7771,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6147,6 +7839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6199,6 +7895,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1710817266}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1728407251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1264294618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1728407252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728407251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1766143803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1815001829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1766143804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766143803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!114 &1766143806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766143803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1783364626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6209,6 +7959,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6273,6 +8027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -6325,6 +8083,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1788807029}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791850427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 534469406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1791850428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791850427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1791850430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791850427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &1795170234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 753291796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1795170235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795170234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1798936318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6335,6 +8147,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6399,6 +8215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6461,6 +8281,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6586,6 +8410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestCrate (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.03
@@ -6661,6 +8489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -6724,6 +8556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -6776,6 +8612,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1859427265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1884941168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1984525770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1884941169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884941168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1885976289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 184245005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1885976290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885976289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &1885976292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885976289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1905369787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6786,6 +8676,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6839,6 +8733,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1905369787}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1906656605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1927161945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1906656606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906656605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1910039386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1242021948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1910039387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910039386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1927161945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6849,6 +8781,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7025,6 +8961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -7077,6 +9017,117 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1930594185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940413860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1530010501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1940413861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940413860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1952112387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 518397349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952112388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952112387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!65 &1952112389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952112387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1976924717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 47211971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1976924718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976924717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1978836994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 67654886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1978836995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978836994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &1981720183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3754557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1981720184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981720183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &1984525770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7087,6 +9138,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7140,6 +9195,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1984525770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1988151180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 263c79b67299cb047a9649f135611a9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445894456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1988151183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988151180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1 &1991798085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 81615984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1991798086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991798085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &2001052090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7150,6 +9246,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7213,6 +9313,10 @@ PrefabInstance:
     - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_Name
       value: ForestCrate (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4792997671261284, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7289,6 +9393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestGround02 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -7341,6 +9449,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2032866294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037546933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2001052090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2037546934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037546933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
+--- !u!1 &2054512100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859427265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2054512101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054512100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &2057330440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7351,6 +9497,10 @@ PrefabInstance:
     - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_Name
       value: ForestGround01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4482437886289408, guid: 1d9cc67243350f643b8c562ed0503c49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7450,6 +9600,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2060447097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452721884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2060447098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060447097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2, z: 2.0000005}
+  m_Center: {x: -0.000000923872, y: 0, z: 0}
 --- !u!1001 &2063472768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7460,6 +9629,10 @@ PrefabInstance:
     - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_Name
       value: ForestGround02 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7513,6 +9686,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2063472768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2081361576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 637081197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2081361577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081361576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &2081361579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081361576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &2117370126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7570,3 +9778,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fea5a90bb0cca941a178051e6ea4b54, type: 3}
+--- !u!1 &2147149942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844,
+    type: 3}
+  m_PrefabInstance: {fileID: 1829799511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2147149943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147149942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.0043328106, y: 0.0016253889, z: -0.0013746618}
+--- !u!114 &2147149945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147149942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
