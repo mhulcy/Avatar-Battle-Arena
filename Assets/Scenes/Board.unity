@@ -5439,6 +5439,37 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1499
       objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5413842229711819033, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+        type: 3}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: spawnFireAssassin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128878733178503351, guid: db8519fc5261b894484aa1a8d6488f4c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8519fc5261b894484aa1a8d6488f4c, type: 3}
 --- !u!224 &352897684 stripped
@@ -5447,6 +5478,26 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 352897683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &352897685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7128878733178503349, guid: db8519fc5261b894484aa1a8d6488f4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 352897683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &352897686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352897685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ba383b581e8d0478c1ebd30512c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireAssassin: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+    type: 3}
 --- !u!1 &354333125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1560257132984952, guid: 5cbae0602ce9acf41a98fda3a353569a,
@@ -11842,7 +11893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e90d5afad22a44185b4af97370aa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EarthWarrior: {fileID: 0}
 --- !u!1001 &833669908
 PrefabInstance:
   m_ObjectHideFlags: 0
