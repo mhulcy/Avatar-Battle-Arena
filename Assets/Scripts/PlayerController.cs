@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+    private bool isSelected = false;
 
     public Camera cam;
 
@@ -14,16 +15,33 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        
+        if (isSelected)
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if(Physics.Raycast(ray, out hit))
+            if (Input.GetMouseButtonDown(1))
             {
-                this.transform.position = hit.point;
-                
+                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    this.transform.position = hit.point;
+                    
+                }
+                isSelected = false;
             }
         }
+        
+
+
+    }
+
+    void OnMouseDown()
+    {
+        
+        
+            print("Got into if statement");
+            isSelected = true;
+        
     }
 }
