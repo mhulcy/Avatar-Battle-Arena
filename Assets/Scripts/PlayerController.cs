@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour
         
         if (isSelected)
         {
-            if (Input.GetMouseButtonDown(1))
+
+           
+
+            if (Input.GetMouseButtonUp(0))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
@@ -68,6 +71,7 @@ public class PlayerController : MonoBehaviour
                 isSelected = false;
 
             }
+            
         }
         
 

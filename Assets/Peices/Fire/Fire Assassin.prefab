@@ -1716,7 +1716,7 @@ Animator:
   m_GameObject: {fileID: 6483312239768880349}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2ba66718d3169ae42a05d8facf302228, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4329bbc6e0676ec44a6723608b828e4a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1752,7 +1752,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &27890834380864984
 NavMeshAgent:
@@ -1788,7 +1788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
   agent: {fileID: 27890834380864984}
 --- !u!1 &6483312239768880859
 GameObject:
