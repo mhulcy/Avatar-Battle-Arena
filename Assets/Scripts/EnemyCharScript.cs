@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterInstantiation : MonoBehaviour
+public class EnemyCharScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
