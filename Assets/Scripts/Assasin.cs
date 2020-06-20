@@ -9,6 +9,8 @@ using UnityEngine.AI;
 
 public class Assasin : MonoBehaviour
 {
+    PlayerController playerControls = new PlayerController();
+
     int health = 50;
     const int range = 3;
     int damage = 40;
@@ -35,37 +37,40 @@ public class Assasin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        if (!usedMove)
+        playerControls = this.GetComponent<PlayerController>();
+        if (!playerControls.playerBench)
         {
-            GameObject farEnemy = findFarEnemy();
-            usedMove = true;
-            superMove(farEnemy.transform.position);
-        }
 
-
-        target = findEnemy();
-        if (target != null)
-        {
-           
-            targetCoords = target.transform.position;
-            anim.SetBool("IsWalking", true);
-            if (findDistance(this.transform.position, targetCoords) < range)
+            if (!usedMove)
             {
-                anim.SetBool("IsWalking", false);
-                agent.isStopped = true;
-                timer -= Time.deltaTime;
-                if (timer < 0)
-                {
-                    print(attack());
-                }
+                GameObject farEnemy = findFarEnemy();
+                usedMove = true;
+                superMove(farEnemy.transform.position);
             }
-            else
+
+
+            target = findEnemy();
+            if (target != null)
             {
 
-                agent.isStopped = false;
-                agent.SetDestination(targetCoords);
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
+                {
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
+                    {
+                        print(attack());
+                    }
+                }
+                else
+                {
+
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
+                }
             }
         }
 

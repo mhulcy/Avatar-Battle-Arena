@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
+using System.Runtime.CompilerServices;
 
 public class Warrior : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class Warrior : MonoBehaviour
 
 
     public NavMeshAgent agent;
-
+    PlayerController playerControls = new PlayerController();
 
     void Start()
     {
@@ -33,27 +34,32 @@ public class Warrior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        target = findEnemy();
-        if(target != null)
+        playerControls = this.GetComponent<PlayerController>();
+        if (!playerControls.playerBench)
         {
-            targetCoords = target.transform.position;
-            anim.SetBool("IsWalking", true);
-            if(findDistance(this.transform.position, targetCoords) < range)
+
+
+
+            target = findEnemy();
+            if (target != null)
             {
-                anim.SetBool("IsWalking", false);
-                agent.isStopped = true;
-                timer -= Time.deltaTime;
-                if (timer < 0)
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
                 {
-                    print(attack());
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
+                    {
+                        print(attack());
+                    }
                 }
-            }
-            else
-            {
-                agent.isStopped = false;
-                agent.SetDestination(targetCoords);
+                else
+                {
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
+                }
             }
         }
 
