@@ -2263,6 +2263,7 @@ GameObject:
   - component: {fileID: 2082634092}
   - component: {fileID: 2082634091}
   - component: {fileID: 2082634093}
+  - component: {fileID: -9120718735554408464}
   m_Layer: 0
   m_Name: Fire Bender
   m_TagString: Untagged
@@ -2375,6 +2376,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2082634091}
+--- !u!114 &-9120718735554408464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886486155345767721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa91a7363c0fc0746abde2d1bffffcdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireBender: {fileID: 7886486155345767721}
 --- !u!1 &7886486155345768649
 GameObject:
   m_ObjectHideFlags: 0
