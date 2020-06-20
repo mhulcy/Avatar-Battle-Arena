@@ -969,6 +969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -1560,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -1674,6 +1682,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2133,6 +2145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -2203,6 +2219,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2807,6 +2827,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3842,6 +3866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -4319,6 +4347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -4621,6 +4653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -4767,6 +4803,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5159,6 +5199,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5922,9 +5966,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
---- !u!4 &1317218483 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
+--- !u!224 &1317218483 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224763426186284840, guid: 5eefba205a58c8c4a937c97b87c185a3,
+    type: 3}
   m_PrefabInstance: {fileID: 1317218482}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1371164499 stripped
@@ -8624,6 +8669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -8694,6 +8743,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9127,6 +9180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -9198,6 +9255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForestBlock01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -9268,6 +9329,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: ForestBlock01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Bench
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
