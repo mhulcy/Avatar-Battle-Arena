@@ -44,13 +44,14 @@ public class PlayerController : MonoBehaviour
                     //Find a way to get rid of this line
                    // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
-                    
+                    isSelected = false;
                 }
-                isSelected = false;
+                
             }
             else if (Input.GetKeyUp("b"))
             {
                 sendToBench();
+                isSelected = false;
             }
         }
         
@@ -97,16 +98,18 @@ public class PlayerController : MonoBehaviour
         int sendZ = -2;
         int sendY = 0;
         int count = 0;
+        bool isBenched = false;
 
        
        GameObject[] temp =  GameObject.FindGameObjectsWithTag("Bench");
         Bench_Script[] benches = new Bench_Script[temp.Length];
         for (int i = 0; i < temp.Length; i++){
             benches[i] = temp[i].GetComponent<Bench_Script>();
-            if (!benches[i].occupancy())
+            if (!benches[i].occupancy() && !isBenched)
             {
                 this.transform.position = benches[i].transform.position;
                 benches[i].occupy();
+                isBenched = true;
             }
         }
        
