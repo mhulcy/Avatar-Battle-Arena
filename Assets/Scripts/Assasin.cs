@@ -79,7 +79,7 @@ public class Assasin : MonoBehaviour
         int amount;
         print("attacks");
         timer = 1f;
-        int addedDmg = UnityEngine.Random.Range(-5, 6);
+        int addedDmg = UnityEngine.Random.Range(-20, 21);
         amount = damage + addedDmg;
         return amount;
     }
