@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    GameObject square = hit.collider.gameObject;
-                    Color color = square.GetComponent<Color>();
-                    color = Color.yellow;
+                   // GameObject square = hit.collider.gameObject;
+                    //Color color = square.GetComponent<Color>();
+                    //color = Color.yellow;
                     if (playerBench)
                     {
                         playerBench = false;
