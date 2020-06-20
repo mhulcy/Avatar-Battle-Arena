@@ -40,14 +40,17 @@ public class PlayerController : MonoBehaviour
                     //Find a way to get rid of this line
                    // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
-                    
+                    isSelected = false;
+
                 }
-                isSelected = false;
+               
             }
             else if (Input.GetKeyUp("b"))
             {
                 sendToBench();
+                isSelected = false;
             }
+            
         }
         
 
