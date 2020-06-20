@@ -6,8 +6,12 @@ using UnityEngine;
 
 public class SpawnWarrior : MonoBehaviour
 {
+   private GameObject EarthWarrior;
+    //private SpawnManager _spawnManager;
+
    public void spawnWarrior()
     {
-        Instantiate(Character_Samurai_Grunt, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(EarthWarrior, new Vector3(1, 1, 1), Quaternion.identity);
     }
+
 }
