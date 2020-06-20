@@ -17,6 +17,7 @@ public class Warrior : MonoBehaviour
 
     Vector3 targetCoords = new Vector3 (0,0,0);
 
+    Animator anim;
     GameObject target;
 
 
@@ -25,7 +26,7 @@ public class Warrior : MonoBehaviour
 
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
 
     }
 
@@ -38,8 +39,10 @@ public class Warrior : MonoBehaviour
         if(target != null)
         {
             targetCoords = target.transform.position;
+            anim.SetBool("IsWalking", true);
             if(findDistance(this.transform.position, targetCoords) < range)
             {
+                anim.SetBool("IsWalking", false);
                 agent.isStopped = true;
                 timer -= Time.deltaTime;
                 if (timer < 0)
@@ -61,8 +64,9 @@ public class Warrior : MonoBehaviour
 
     int attack()
     {
+            anim.SetTrigger("PunchTrigger");
             int amount; 
-            //print("attacks");
+            print("attacks");
             timer = 1f;
             int addedDmg = UnityEngine.Random.Range(-5, 6);
             amount = damage + addedDmg;
