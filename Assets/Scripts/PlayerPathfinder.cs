@@ -41,7 +41,7 @@ public class PlayerPathfinder : MonoBehaviour
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
         for (int i = 0; i < gameObjects.Length; ++i)
         {
-            print("found enemy");
+           // print("found enemy");
             value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
                 Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) + 
                 Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
