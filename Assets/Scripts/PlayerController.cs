@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     private bool isSelected = false;
 
-    public Camera cam;
+    private Camera cam;
 
     private Bench_Script _bench;
 
@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        cam = Camera.main;
         _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
         if(_bench == null)
         {
@@ -61,8 +62,11 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKeyUp("b"))
             {
+                _bench.unOccupy();
+                playerBench = false;
                 sendToBench();
                 isSelected = false;
+
             }
         }
         

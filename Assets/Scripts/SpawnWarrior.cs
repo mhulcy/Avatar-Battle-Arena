@@ -7,7 +7,7 @@ using UnityEngine;
 public class SpawnWarrior : MonoBehaviour
 {
    public GameObject EarthWarrior;
-
+      
    public void spawnWarrior()
     {
         print("called");
