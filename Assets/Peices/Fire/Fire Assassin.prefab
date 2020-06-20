@@ -1676,6 +1676,7 @@ GameObject:
   - component: {fileID: 5006535970368248117}
   - component: {fileID: 1675502951214708801}
   - component: {fileID: 27890834380864984}
+  - component: {fileID: 5413842229711819033}
   - component: {fileID: 8699174696107005293}
   m_Layer: 0
   m_Name: Fire Assassin
@@ -1776,6 +1777,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5413842229711819033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6483312239768880349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ba383b581e8d0478c1ebd30512c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireAssassin: {fileID: 6483312239768880349}
 --- !u!114 &8699174696107005293
 MonoBehaviour:
   m_ObjectHideFlags: 0
