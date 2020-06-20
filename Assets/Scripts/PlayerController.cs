@@ -11,7 +11,20 @@ public class PlayerController : MonoBehaviour
 
     public Camera cam;
 
+    private Bench_Script _bench;
+
     public NavMeshAgent agent;
+
+    private void Start()
+    {
+        _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
+        if(_bench == null)
+        {
+            Debug.Log("The bench messed up");
+        }
+    }
+
+
 
     // Update is called once per frame
     void Update()
@@ -85,16 +98,18 @@ public class PlayerController : MonoBehaviour
         int sendY = 0;
         int count = 0;
 
-       GameObject[] benches =  GameObject.FindGameObjectsWithTag("Bench");
-        for(int i = 0; i < benches.Length; ++i)
-        {
+       
+       GameObject[] temp =  GameObject.FindGameObjectsWithTag("Bench");
+        Bench_Script[] benches = new Bench_Script[temp.Length];
+        for (int i = 0; i < temp.Length; i++){
+            benches[i] = temp[i].GetComponent<Bench_Script>();
             if (!benches[i].occupancy())
             {
-
+                this.transform.position = benches[i].transform.position;
+                benches[i].occupy();
             }
         }
-
-
+       
     }
 
 }
