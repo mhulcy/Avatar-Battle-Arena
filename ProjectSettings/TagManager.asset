@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy_Piece
+  - Board
+  - Bench
   layers:
   - Default
   - TransparentFX
