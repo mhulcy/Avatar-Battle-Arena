@@ -7,8 +7,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class Bender : MonoBehaviour
-{
+public class WaterBender : MonoBehaviour {
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -27,63 +26,56 @@ public class Bender : MonoBehaviour
     public NavMeshAgent agent;
 
 
-    void Start()
-    {
+    void Start() {
         anim = GetComponent<Animator>();
 
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-        
+    void Update() {
+
+
 
 
         target = findEnemy();
-        if (target != null)
-        {
+        if (target != null) {
             targetCoords = target.transform.position;
             anim.SetBool("IsWalking", true);
-            if (findDistance(this.transform.position, targetCoords) < range)
-            {
+            if (findDistance(this.transform.position, targetCoords) < range) {
                 anim.SetBool("IsWalking", false);
                 agent.isStopped = true;
                 timer -= Time.deltaTime;
-                if (timer < 0)
-                {
+                if (timer < 0) {
                     print(attack());
-                    
-                       
-                        //if (projectile.transform.position == target.transform.position)
-                            //Destroy(projectile);
-                    
+
+
+                    //if (projectile.transform.position == target.transform.position)
+                    //Destroy(projectile);
+
                 }
             }
-            else
-            {
-                
+            else {
+
                 agent.isStopped = false;
                 agent.SetDestination(targetCoords);
             }
         }
 
-        
+
 
     }
 
 
 
 
-    int attack()
-    {
+    int attack() {
         anim.SetTrigger("PunchTrigger");
 
         projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
         FireBall elementShot = projectile.GetComponent<FireBall>();
-         elementShot.setTarget(target);
+        elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
-        
+
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
@@ -95,21 +87,18 @@ public class Bender : MonoBehaviour
         return amount;
     }
 
-    GameObject findEnemy()
-    {
+    GameObject findEnemy() {
         double min = 100000;
         GameObject nearestEnemy = null;
         double value;
 
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
-        for (int i = 0; i < gameObjects.Length; ++i)
-        {
+        for (int i = 0; i < gameObjects.Length; ++i) {
             // print("found enemy");
             value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
                 Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) +
                 Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
-            if (value < min)
-            {
+            if (value < min) {
                 min = value;
                 nearestEnemy = gameObjects[i];
             }
@@ -118,8 +107,7 @@ public class Bender : MonoBehaviour
         return nearestEnemy;
     }
 
-    double findDistance(Vector3 myPos, Vector3 targetPos)
-    {
+    double findDistance(Vector3 myPos, Vector3 targetPos) {
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
