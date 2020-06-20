@@ -6,26 +6,36 @@ public class FireWarriorAnimator : MonoBehaviour
 {
     float speed = 4;
 
-    Vector3 moveDir = Vector3.zero;
+    Vector3 OgPosition = Vector3.zero;
     CharacterController controller;
     Animator animator;
     Rigidbody rig;
-
+    
     void Start() {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         rig = GetComponent<Rigidbody>();
+        //OgPosition = this.transform.position;
     }
 
 
     void Update() {
-        Debug.Log(rig.velocity.magnitude);
-        animator.SetFloat("Speed", rig.velocity.magnitude);
-        if (rig.velocity.magnitude > 0) {
+        speed = rig.velocity.magnitude;
+        print(rig.velocity.magnitude);
+        //animator.SetFloat("Speed", rig.velocity.magnitude);
+        /*
+        if (OgPosition != transform.position) {
+            print("made it");
             animator.SetTrigger("Walk Forward");
+            OgPosition = transform.position;
+        }
+        */
+        if (speed < .5) {
+            animator.SetBool("IsWalking", true);
+            OgPosition = transform.position;
         }
         else
-            animator.ResetTrigger("Walk Forward");
+            animator.SetTrigger("IdleNow");
     }
 }
 

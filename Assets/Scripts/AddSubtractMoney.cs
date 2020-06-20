@@ -16,12 +16,12 @@ public class AddSubtractMoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp("p"))
+        if(Input.GetKey("p"))
         {
             cam.GetComponent<PlayerMoney>().addMoney(5);
         }
 
-        if (Input.GetKeyUp("o"))
+        if (Input.GetKey("o"))
         {
             cam.GetComponent<PlayerMoney>().subtractMoney(5);
         }
