@@ -10,7 +10,7 @@ using UnityEngine.AI;
 public class Warrior : MonoBehaviour
 {
     int health = 100;
-    const int range = 2;
+    const int range = 3;
     int damage = 20;
     int tolerance = 5;
     float timer = 1f;
@@ -40,6 +40,7 @@ public class Warrior : MonoBehaviour
             targetCoords = target.transform.position;
             if(findDistance(this.transform.position, targetCoords) < range)
             {
+                agent.isStopped = true;
                 timer -= Time.deltaTime;
                 if (timer < 0)
                 {
@@ -48,6 +49,7 @@ public class Warrior : MonoBehaviour
             }
             else
             {
+                agent.isStopped = false;
                 agent.SetDestination(targetCoords);
             }
         }
