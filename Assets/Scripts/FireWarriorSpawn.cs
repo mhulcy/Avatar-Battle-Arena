@@ -11,5 +11,6 @@ public class FireWarriorSpawn : MonoBehaviour
     public void spawnFireWarrior()
     {
         GameObject Fire_Warrior = Instantiate(FireWarrior, new Vector3(0, 0, 0), Quaternion.identity);
+        
     }
 }
