@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
-    public GameObject target;
-    private float _speed = 8.0f;
+    private GameObject target;
+    private float _speed = .01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,12 @@ public class FireBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, target.transform.position, _speed);
+        print("ran");
+       // this.transform.position = target.transform.position;
+            this.transform.position = Vector3.MoveTowards(this.transform.position, target.transform.position, _speed);
+    }
+   public void setTarget(GameObject attackMe)
+    {
+        target = attackMe;
     }
 }
