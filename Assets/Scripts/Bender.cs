@@ -78,6 +78,7 @@ public class Bender : MonoBehaviour
     int attack()
     {
         anim.SetTrigger("PunchTrigger");
+
         projectile = Instantiate(elementPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity) as GameObject;
 
         projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10);
