@@ -11,7 +11,10 @@ public class MainMenuScript : MonoBehaviour
     {
         
     }
-
+    //Scenes
+    //0- Start Menu
+    //1- Controls
+    //2- Game
     public void PlayGame() {
         prevScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(2);
