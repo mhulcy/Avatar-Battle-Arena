@@ -26,7 +26,7 @@ public class Bender : MonoBehaviour
 
     void Start()
     {
-       // anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
     }
 
@@ -52,9 +52,9 @@ public class Bender : MonoBehaviour
             }
             else
             {
-                print("walking");
+                
                 agent.isStopped = false;
-                agent.SetDestination(new Vector3 (0,0,0));
+                agent.SetDestination(targetCoords);
             }
         }
 
