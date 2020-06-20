@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnWaterAssassin : MonoBehaviour
 {
-    public GameObject WaerAssassin;
+    public GameObject WaterAssassin;
 
     public void spawnWaterAssassin()
     {
