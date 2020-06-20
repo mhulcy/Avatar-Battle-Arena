@@ -17,11 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
-        if(_bench == null)
-        {
-            Debug.Log("The bench messed up");
-        }
+      
     }
 
 
@@ -97,17 +93,22 @@ public class PlayerController : MonoBehaviour
         int sendZ = -2;
         int sendY = 0;
         int count = 0;
+        bool isPlaced = false;
 
        
        GameObject[] temp =  GameObject.FindGameObjectsWithTag("Bench");
         Bench_Script[] benches = new Bench_Script[temp.Length];
         for (int i = 0; i < temp.Length; i++){
             benches[i] = temp[i].GetComponent<Bench_Script>();
-            if (!benches[i].occupancy())
+            print(benches.Length);
+            if (!benches[i].occupancy() && !isPlaced )
             {
                 this.transform.position = benches[i].transform.position;
                 benches[i].occupy();
+                isPlaced = true;
+
             }
+            
         }
        
     }
