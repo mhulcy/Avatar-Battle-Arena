@@ -99,17 +99,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnMouseDown()
-    {
+    { 
+        isSelected = true;
 
-
-        if (isSelected)
-        {
-            isSelected = false;
-        }
-        else
-        {
-            isSelected = true;
-        }
     }
 
     void sendToBench()
