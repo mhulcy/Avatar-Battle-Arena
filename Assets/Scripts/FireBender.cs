@@ -7,21 +7,22 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class Assasin : MonoBehaviour
+public class FireBender : MonoBehaviour
 {
-    int health = 50;
-    const int range = 3;
-    int damage = 40;
-    int tolerance = 20;
+    int health = 60;
+    const int range = 6;
+    int damage = 30;
+    int tolerance = 5;
     float timer = 1f;
-
-    bool usedMove = false;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
+    public GameObject projectile;
 
+
+    public GameObject elementPrefab;
 
     public NavMeshAgent agent;
 
@@ -35,20 +36,13 @@ public class Assasin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        if (!usedMove)
-        {
-            GameObject farEnemy = findFarEnemy();
-            usedMove = true;
-            superMove(farEnemy.transform.position);
-        }
+        
+        
 
 
         target = findEnemy();
         if (target != null)
         {
-           
             targetCoords = target.transform.position;
             anim.SetBool("IsWalking", true);
             if (findDistance(this.transform.position, targetCoords) < range)
@@ -59,15 +53,22 @@ public class Assasin : MonoBehaviour
                 if (timer < 0)
                 {
                     print(attack());
+                    
+                       
+                        //if (projectile.transform.position == target.transform.position)
+                            //Destroy(projectile);
+                    
                 }
             }
             else
             {
-
+                
                 agent.isStopped = false;
                 agent.SetDestination(targetCoords);
             }
         }
+
+        
 
     }
 
@@ -77,42 +78,21 @@ public class Assasin : MonoBehaviour
     int attack()
     {
         anim.SetTrigger("PunchTrigger");
+
+        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
+        FireBall elementShot = projectile.GetComponent<FireBall>();
+         elementShot.setTarget(target);
+        //elementShot.transform.position = target.transform.position;
+        
+        //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        //Destroy(projectile);
+
         int amount;
-        print("attacks");
+        //print("attacks");
         timer = 1f;
-        int addedDmg = UnityEngine.Random.Range(-20, 21);
+        int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
         return amount;
-    }
-
-
-    void superMove(Vector3 coords)
-    {
-        this.transform.position = coords;
-    }
-
-
-    GameObject findFarEnemy()
-    {
-        double max = 0;
-        GameObject farthestEnemy = null;
-        double value;
-
-        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
-        for (int i = 0; i < gameObjects.Length; ++i)
-        {
-            // print("found enemy");
-            value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
-                Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) +
-                Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
-            if (value > max)
-            {
-                max = value;
-                farthestEnemy = gameObjects[i];
-            }
-        }
-
-        return farthestEnemy;
     }
 
     GameObject findEnemy()
