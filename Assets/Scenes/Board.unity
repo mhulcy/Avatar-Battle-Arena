@@ -3035,6 +3035,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d87f80d13c8f1ac4e8d5a2a5f23d6df8, type: 3}
+--- !u!1001 &623853581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 623853583, guid: 49ca51d10f427cd4fb08923a85f3695f, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1928651905}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06318587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748852805368, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+        type: 3}
+      propertyPath: m_Name
+      value: EarthWarrior
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49ca51d10f427cd4fb08923a85f3695f, type: 3}
 --- !u!1001 &628277692
 PrefabInstance:
   m_ObjectHideFlags: 0
