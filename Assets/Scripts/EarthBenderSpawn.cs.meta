@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa91a7363c0fc0746abde2d1bffffcdb
+guid: ddf005ec5f02e6543b93d9c2f88c1d92
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - FireBender: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+  - EarthBender: {fileID: 1366204537301040084, guid: 9146a590a10021e48a364c817ce16d8e,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

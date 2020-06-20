@@ -3260,6 +3260,7 @@ GameObject:
   - component: {fileID: 6106890448280228445}
   - component: {fileID: 5089988356490483542}
   - component: {fileID: 8011293202731260410}
+  - component: {fileID: -8492655717001707827}
   m_Layer: 0
   m_Name: Earth Assassin
   m_TagString: Untagged
@@ -3385,6 +3386,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-8492655717001707827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767130447686587120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4672ea1c69b20804cbf18b64896ef006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EarthAssassin: {fileID: 2767130447686587120}
 --- !u!1 &2767130447686589650
 GameObject:
   m_ObjectHideFlags: 0
