@@ -2122,7 +2122,7 @@ GameObject:
   - component: {fileID: 4137001748852805368}
   - component: {fileID: 4137001748845820566}
   m_Layer: 0
-  m_Name: Earth Warrior
+  m_Name: EarthWarrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
