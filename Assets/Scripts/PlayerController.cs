@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour
           
             if (Input.GetMouseButtonUp(0))
             {
+
+                print("UPPPPPPP");
                 _bench.unOccupy();
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;

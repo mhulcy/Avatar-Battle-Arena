@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class SpawnWarrior : MonoBehaviour
+public class SpawnEarthWarrior : MonoBehaviour
 {
    public GameObject EarthWarrior;
       
