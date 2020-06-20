@@ -1800,10 +1800,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2082634093, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1928651905}
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Name
@@ -9714,6 +9710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224687051574267488, guid: d16a19242f7da6d4794facdc63b9c915,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224687051574267488, guid: d16a19242f7da6d4794facdc63b9c915,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -10949,15 +10950,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Assassin
       objectReference: {fileID: 0}
-    - target: {fileID: 6483312239776255735, guid: 62366a7fefe69c94cab24f2c8b73c74d,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 4329bbc6e0676ec44a6723608b828e4a, type: 2}
-    - target: {fileID: 8699174696107005293, guid: 62366a7fefe69c94cab24f2c8b73c74d,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1928651905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62366a7fefe69c94cab24f2c8b73c74d, type: 3}
