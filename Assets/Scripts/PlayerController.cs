@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
                         _bench.unOccupy();
 
                     }
-
+                    _bench = null;
                     //Find a way to get rid of this line
                     // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
@@ -62,7 +62,10 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetKeyUp("b"))
             {
-                _bench.unOccupy();
+                if (_bench != null)
+                {
+                    _bench.unOccupy();
+                }
                 playerBench = false;
                 sendToBench();
                 isSelected = false;
