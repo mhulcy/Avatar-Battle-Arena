@@ -6863,6 +6863,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5709722616449256144, guid: f4bbe488023a3bb4faa87d35377e90c1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_Name
@@ -6871,7 +6876,7 @@ PrefabInstance:
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy_Piece
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7886486155345983661, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
@@ -6928,15 +6933,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7886486155345993919, guid: f4bbe488023a3bb4faa87d35377e90c1,
+    - target: {fileID: 7886486155355002605, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 7886486155345993919, guid: f4bbe488023a3bb4faa87d35377e90c1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.33
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4bbe488023a3bb4faa87d35377e90c1, type: 3}
@@ -28645,6 +28645,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fire Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy_Piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326122282057715643, guid: 6f10a5da9f4556f419983fa31031b62e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f10a5da9f4556f419983fa31031b62e, type: 3}
