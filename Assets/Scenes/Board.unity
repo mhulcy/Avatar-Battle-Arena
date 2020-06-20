@@ -9441,9 +9441,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 585330474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2318d79d7d19874fbb1931920cef7ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 604b1176d44d7e54cbbe88e0753916a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FireWarrior: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+    type: 3}
 --- !u!1 &596715440
 GameObject:
   m_ObjectHideFlags: 0
@@ -11830,7 +11832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e90d5afad22a44185b4af97370aa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EarthWarrior: {fileID: 0}
 --- !u!1001 &833669908
 PrefabInstance:
   m_ObjectHideFlags: 0
