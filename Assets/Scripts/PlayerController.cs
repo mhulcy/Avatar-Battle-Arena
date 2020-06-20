@@ -21,11 +21,11 @@ public class PlayerController : MonoBehaviour
     {
         cam = Camera.main;
         _bench = GameObject.Find("Bench").GetComponent<Bench_Script>();
-        if(_bench == null)
+        if (_bench == null)
         {
             Debug.Log("The bench messed up");
         }
-        if(playerBench == false)
+        if (playerBench == false)
         {
             sendToBench();
         }
@@ -36,13 +36,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (isSelected)
         {
-
-           
-
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
@@ -55,25 +52,27 @@ public class PlayerController : MonoBehaviour
                         _bench.unOccupy();
 
                     }
-
+                    _bench = null;
                     //Find a way to get rid of this line
-                   // this.transform.position = hit.point;
+                    // this.transform.position = hit.point;
                     this.transform.position = findBoard(hit.point);
                     isSelected = false;
                 }
-                
+
             }
             else if (Input.GetKeyUp("b"))
             {
-                _bench.unOccupy();
+                if (_bench != null)
+                {
+                    _bench.unOccupy();
+                }
                 playerBench = false;
                 sendToBench();
                 isSelected = false;
 
             }
-            
         }
-        
+
 
 
     }
@@ -89,13 +88,13 @@ public class PlayerController : MonoBehaviour
         {
             // print("found enemy");
             value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - currPos.x, 2) +
-                Math.Pow(gameObjects[i].transform.position.y - currPos.y, 2) +
-                Math.Pow(gameObjects[i].transform.position.z - currPos.z, 2));
+            Math.Pow(gameObjects[i].transform.position.y - currPos.y, 2) +
+            Math.Pow(gameObjects[i].transform.position.z - currPos.z, 2));
             if (value < min)
             {
                 min = value;
                 nearestBoard = new Vector3(gameObjects[i].transform.position.x, gameObjects[i].transform.position.y, gameObjects[i].transform.position.z);
-                
+
             }
         }
         print(nearestBoard);
@@ -103,12 +102,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnMouseDown()
-    {
-        
-        
-            //print("Got into if statement");
-            isSelected = true;
-        
+    { 
+        isSelected = true;
+
     }
 
     void sendToBench()
@@ -119,10 +115,11 @@ public class PlayerController : MonoBehaviour
         int count = 0;
         bool isBenched = false;
 
-       
-       GameObject[] temp =  GameObject.FindGameObjectsWithTag("Bench");
+
+        GameObject[] temp = GameObject.FindGameObjectsWithTag("Bench");
         Bench_Script[] benches = new Bench_Script[temp.Length];
-        for (int i = 0; i < temp.Length; i++){
+        for (int i = 0; i < temp.Length; i++)
+        {
             benches[i] = temp[i].GetComponent<Bench_Script>();
             if (!benches[i].occupancy() && !isBenched)
             {
@@ -133,7 +130,7 @@ public class PlayerController : MonoBehaviour
                 playerBench = true;
             }
         }
-       
+
     }
 
 }
