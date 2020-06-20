@@ -28,7 +28,7 @@ public class Bench_Script : MonoBehaviour
         isOccupied = false;
     }
 
-    bool occupancy()
+   public bool occupancy()
     {
         return isOccupied;
     }

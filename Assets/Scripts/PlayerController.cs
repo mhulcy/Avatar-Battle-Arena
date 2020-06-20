@@ -86,9 +86,12 @@ public class PlayerController : MonoBehaviour
         int count = 0;
 
        GameObject[] benches =  GameObject.FindGameObjectsWithTag("Bench");
-        for(int i = 0; i < benches.length; ++i)
+        for(int i = 0; i < benches.Length; ++i)
         {
-            if()
+            if (!benches[i].occupancy())
+            {
+
+            }
         }
 
 
