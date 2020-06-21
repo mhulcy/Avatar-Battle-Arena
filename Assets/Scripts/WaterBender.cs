@@ -121,6 +121,14 @@ public class WaterBender : MonoBehaviour {
         amount = damage + addedDmg;
         return amount;
     }
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     GameObject findEnemy() {
         double min = 100000;
