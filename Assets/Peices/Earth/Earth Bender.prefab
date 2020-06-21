@@ -1258,6 +1258,7 @@ GameObject:
   - component: {fileID: 5595565021200818935}
   - component: {fileID: 8138545235885656096}
   - component: {fileID: 375072029}
+  - component: {fileID: 375072036}
   m_Layer: 0
   m_Name: Earth Bender
   m_TagString: Player_Piece
@@ -1385,6 +1386,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementPrefab: {fileID: 6001232595579979250}
   agent: {fileID: 4343095926310294116}
+--- !u!114 &375072036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4736963232337073261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4343095926310294116}
+  playerBench: 0
 --- !u!1 &4736963232337073823
 GameObject:
   m_ObjectHideFlags: 0
