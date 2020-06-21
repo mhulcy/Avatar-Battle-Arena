@@ -23,7 +23,7 @@ public class AirBender : MonoBehaviour
 
 
     public GameObject elementPrefab;
-    //ParticleSystem air;
+    ParticleSystem air;
 
     public NavMeshAgent agent;
   //  PlayerController playerControls = new PlayerController();
@@ -31,7 +31,7 @@ public class AirBender : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-       // air = elementPrefab.GetComponent<ParticleSystem>();
+        air = elementPrefab.GetComponent<ParticleSystem>();
 
     }
 
@@ -41,7 +41,7 @@ public class AirBender : MonoBehaviour
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench)
         {
-            //air.Play();
+            
             playerControls = this.GetComponent<PlayerController>();
             if (!playerControls.playerBench)
             {
@@ -118,10 +118,16 @@ public class AirBender : MonoBehaviour
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
+<<<<<<< HEAD
         
-
-
+=======
         anim.SetTrigger("PunchTrigger");
+        air.Play();
+        return amount;
+>>>>>>> 94af51d44d57ddd1c281e77d9be8b5f832fe617b
+
+
+        
        //air.Play();
         projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity) as GameObject;
         Tornado elementShot = projectile.GetComponent<Tornado>();
