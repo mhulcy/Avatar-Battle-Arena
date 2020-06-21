@@ -3116,8 +3116,8 @@ GameObject:
   - component: {fileID: 204323896}
   - component: {fileID: 204323893}
   - component: {fileID: 204323894}
-  - component: {fileID: 204323895}
   - component: {fileID: 2994420230456266648}
+  - component: {fileID: -2339731133027111471}
   m_Layer: 0
   m_Name: Water Bender
   m_TagString: Player_Piece
@@ -3231,21 +3231,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &204323895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3460900945909919082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9947070d2237a3448ee3dbacc7a3a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  elementPrefab: {fileID: 0}
-  agent: {fileID: 204323894}
 --- !u!114 &2994420230456266648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3259,6 +3244,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaterBender: {fileID: 3460900945909919082}
+--- !u!114 &-2339731133027111471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460900945909919082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5103fa85787ec4dbdd3bb54a7659c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementPrefab: {fileID: 0}
+  agent: {fileID: 204323894}
 --- !u!1 &3460900945909923238
 GameObject:
   m_ObjectHideFlags: 0
