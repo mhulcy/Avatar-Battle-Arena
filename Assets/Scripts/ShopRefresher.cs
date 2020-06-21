@@ -9,8 +9,8 @@ using System.Security.Cryptography;
 
 public class ShopRefresher   : MonoBehaviour 
 {
-    public GameObject buttons;
-    public void Start()
+     public GameObject buttons;
+     public void Start()
     {
          FireWarriorOne.SetActive(false);
          FireWarriorTwo.SetActive(false);
