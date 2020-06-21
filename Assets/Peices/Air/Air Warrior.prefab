@@ -2672,6 +2672,7 @@ GameObject:
   - component: {fileID: 3120936674631201757}
   - component: {fileID: 2202551491191290508}
   - component: {fileID: 771979310595947207}
+  - component: {fileID: 4217515786464401678}
   m_Layer: 0
   m_Name: Air Warrior
   m_TagString: Untagged
@@ -2775,6 +2776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 771979310595947207}
+  playerBench: 0
 --- !u!195 &771979310595947207
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2797,6 +2799,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4217515786464401678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128577162668582585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba40c16f6db49741963a0cc31516d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AirWarrior: {fileID: 8128577162668582585}
 --- !u!1 &8128577162668583549
 GameObject:
   m_ObjectHideFlags: 0

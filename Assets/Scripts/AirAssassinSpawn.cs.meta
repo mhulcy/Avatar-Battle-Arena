@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0e3b1e6fb9cbdae419ff1f5d097bf5b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - AirAssassin: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 589171449}
   - component: {fileID: 589171448}
   - component: {fileID: 589171447}
+  - component: {fileID: 8499441488733667584}
   m_Layer: 0
   m_Name: Air Bender
   m_TagString: Untagged
@@ -524,6 +525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9947070d2237a3448ee3dbacc7a3a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  elementPrefab: {fileID: 0}
   agent: {fileID: 589171447}
 --- !u!114 &589171448
 MonoBehaviour:
@@ -538,6 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 589171447}
+  playerBench: 0
 --- !u!195 &589171447
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -560,6 +564,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8499441488733667584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195070443504545876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7486928549b544f8cc0d3c4eab51b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AirBender: {fileID: 5195070443504545876}
 --- !u!1 &5195070443504547562
 GameObject:
   m_ObjectHideFlags: 0
