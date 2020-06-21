@@ -75,7 +75,11 @@ public class Warrior : MonoBehaviour
                             EarthBender_Enemy instance = target.GetComponent<EarthBender_Enemy>();
                             instance.takeDamage(attack());
                         }
-                        
+                        else if (target.GetComponent<Airbender_Enemy>() != null)
+                        {
+                            Airbender_Enemy instance = target.GetComponent<Airbender_Enemy>();
+                            instance.takeDamage(attack());
+                        }
 
 
 
