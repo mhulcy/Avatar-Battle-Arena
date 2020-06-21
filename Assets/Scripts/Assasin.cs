@@ -10,7 +10,7 @@ using UnityEngine.AI;
 public class Assasin : MonoBehaviour
 {
     PlayerController playerControls = new PlayerController();
-
+    bool combatState = false;
     int health = 50;
     const int range = 3;
     int damage = 40;
@@ -38,7 +38,7 @@ public class Assasin : MonoBehaviour
     void Update()
     {
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
+        if (!playerControls.playerBench && combatState)
         {
 
             if (!usedMove)
@@ -184,6 +184,15 @@ public class Assasin : MonoBehaviour
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+
+    public void isCombat() {
+        //print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
     }
 
 
