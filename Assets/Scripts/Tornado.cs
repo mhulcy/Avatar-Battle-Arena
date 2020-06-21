@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tornado : MonoBehaviour
 {
     private GameObject target;
-    private float _speed = .2f;
+    private float _speed = 2f;
     private float _time = 0;
     // Start is called before the first frame update
     void Start()
