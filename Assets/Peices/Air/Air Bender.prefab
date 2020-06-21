@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 6902819084582337228}
   m_Layer: 0
   m_Name: Air Bender
-  m_TagString: Enemy_Piece
+  m_TagString: Player_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
