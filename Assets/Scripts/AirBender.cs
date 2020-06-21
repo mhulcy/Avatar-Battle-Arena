@@ -118,13 +118,13 @@ public class AirBender : MonoBehaviour
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
-<<<<<<< HEAD
+
         
-=======
+
         anim.SetTrigger("PunchTrigger");
         air.Play();
         return amount;
->>>>>>> 94af51d44d57ddd1c281e77d9be8b5f832fe617b
+
 
 
         
