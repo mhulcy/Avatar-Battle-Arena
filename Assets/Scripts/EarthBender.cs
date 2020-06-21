@@ -7,13 +7,13 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class WaterBender : MonoBehaviour {
+public class EarthBender : MonoBehaviour {
     int health = 60;
     const int range = 6;
     int damage = 30;
     int tolerance = 5;
     float timer = 2f;
-    PlayerController playerControls = new PlayerController();
+
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
@@ -21,53 +21,44 @@ public class WaterBender : MonoBehaviour {
     GameObject target;
 
     public GameObject elementPrefab;
-    ParticleSystem water;
-    
+    ParticleSystem earth;
+
     public NavMeshAgent agent;
 
-    
+
     void Start() {
         anim = GetComponent<Animator>();
-        water = elementPrefab.GetComponent<ParticleSystem>();
+        earth = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update() {
 
-        playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
-        {
+        target = findEnemy();
+        if (target != null) {
+            targetCoords = target.transform.position;
+            anim.SetBool("IsWalking", true);
+            if (findDistance(this.transform.position, targetCoords) < range) {
+                anim.SetBool("IsWalking", false);
+                agent.isStopped = true;
+                timer -= Time.deltaTime;
+                if (timer < 0) {
+                    //Water.Stop();
+                    print(attack());
 
+                   // earth.Stop();
+                    //if (projectile.transform.position == target.transform.position)
+                    //Destroy(projectile);
 
-            target = findEnemy();
-            if (target != null)
-            {
-                targetCoords = target.transform.position;
-                anim.SetBool("IsWalking", true);
-                if (findDistance(this.transform.position, targetCoords) < range)
-                {
-                    anim.SetBool("IsWalking", false);
-                    agent.isStopped = true;
-                    timer -= Time.deltaTime;
-                    if (timer < 0)
-                    {
-                        //Water.Stop();
-                        print(attack());
-
-
-                        //if (projectile.transform.position == target.transform.position)
-                        //Destroy(projectile);
-
-                    }
-                }
-                else
-                {
-
-                    agent.isStopped = false;
-                    agent.SetDestination(targetCoords);
                 }
             }
+            else {
+
+                agent.isStopped = false;
+                agent.SetDestination(targetCoords);
+            }
         }
+
 
 
     }
@@ -77,10 +68,10 @@ public class WaterBender : MonoBehaviour {
 
         //Water water = GetComponent<Water>();
 
-        water.Play();
-        
-       
- 
+        earth.Play();
+
+
+
 
         //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
         //FireBall elementShot = projectile.GetComponent<FireBall>();

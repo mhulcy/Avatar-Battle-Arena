@@ -7,51 +7,49 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class WaterBender : MonoBehaviour {
+public class AirBender : MonoBehaviour
+{
     int health = 60;
     const int range = 6;
     int damage = 30;
     int tolerance = 5;
-    float timer = 2f;
-    PlayerController playerControls = new PlayerController();
+    float timer = 1f;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
+    public GameObject projectile;
+
 
     public GameObject elementPrefab;
-    ParticleSystem water;
-    
-    public NavMeshAgent agent;
 
-    
-    void Start() {
+    public NavMeshAgent agent;
+    PlayerController playerControls = new PlayerController();
+
+    void Start()
+    {
         anim = GetComponent<Animator>();
-        water = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
-        {
+        if (!playerControls.playerBench) {
+
 
 
             target = findEnemy();
-            if (target != null)
-            {
+            if (target != null) {
                 targetCoords = target.transform.position;
                 anim.SetBool("IsWalking", true);
-                if (findDistance(this.transform.position, targetCoords) < range)
-                {
+                if (findDistance(this.transform.position, targetCoords) < range) {
                     anim.SetBool("IsWalking", false);
                     agent.isStopped = true;
                     timer -= Time.deltaTime;
-                    if (timer < 0)
-                    {
-                        //Water.Stop();
+                    if (timer < 0) {
                         print(attack());
 
 
@@ -60,38 +58,28 @@ public class WaterBender : MonoBehaviour {
 
                     }
                 }
-                else
-                {
+                else {
 
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
             }
         }
-
-
     }
+
     int attack() {
-        print("attacks");
         anim.SetTrigger("PunchTrigger");
 
-        //Water water = GetComponent<Water>();
-
-        water.Play();
-        
-       
- 
-
-        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
-        //FireBall elementShot = projectile.GetComponent<FireBall>();
-        //elementShot.setTarget(target);
+        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + .3f, this.transform.position.z), Quaternion.identity) as GameObject;
+        FireBall elementShot = projectile.GetComponent<FireBall>();
+        elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
         int amount;
-        print("attacks");
+        //print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
@@ -123,6 +111,4 @@ public class WaterBender : MonoBehaviour {
         return distance;
 
     }
-
-
 }
