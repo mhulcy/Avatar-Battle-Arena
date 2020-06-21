@@ -431,14 +431,17 @@ GameObject:
   - component: {fileID: 5195070443504840756}
   - component: {fileID: 5195070443511874778}
   - component: {fileID: 589171451}
+  - component: {fileID: 2429040827435672925}
   - component: {fileID: 589171450}
   - component: {fileID: 589171449}
   - component: {fileID: 589171448}
   - component: {fileID: 589171447}
   - component: {fileID: 8499441488733667584}
+  - component: {fileID: 8307190970078963988}
+  - component: {fileID: 586811537917495848}
   m_Layer: 0
   m_Name: Air Bender
-  m_TagString: Untagged
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,6 +503,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &2429040827435672925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195070443504545876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &589171450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -527,7 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
   elementPrefab: {fileID: 0}
-  agent: {fileID: 589171447}
+  agent: {fileID: 589171447, guid: 34aa66b2bd666da458e4b4a0088ae482, type: 3}
 --- !u!114 &589171448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 589171447}
+  agent: {fileID: 589171447, guid: 34aa66b2bd666da458e4b4a0088ae482, type: 3}
   playerBench: 0
 --- !u!195 &589171447
 NavMeshAgent:
@@ -577,6 +593,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AirBender: {fileID: 5195070443504545876}
+--- !u!114 &8307190970078963988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195070443504545876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 589171447}
+--- !u!114 &586811537917495848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195070443504545876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9947070d2237a3448ee3dbacc7a3a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  elementPrefab: {fileID: 0}
+  agent: {fileID: 589171447}
 --- !u!1 &5195070443504547562
 GameObject:
   m_ObjectHideFlags: 0

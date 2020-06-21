@@ -12,23 +12,23 @@ public class WaterBender : MonoBehaviour {
     const int range = 6;
     int damage = 30;
     int tolerance = 5;
-    float timer = 1f;
+    float timer = 2f;
 
+    
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
-    public GameObject projectile;
-
 
     public GameObject elementPrefab;
-
+    ParticleSystem water;
+    
     public NavMeshAgent agent;
 
-
+    
     void Start() {
         anim = GetComponent<Animator>();
-
+        water = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -46,6 +46,7 @@ public class WaterBender : MonoBehaviour {
                 agent.isStopped = true;
                 timer -= Time.deltaTime;
                 if (timer < 0) {
+                    //Water.Stop();
                     print(attack());
 
 
@@ -69,18 +70,26 @@ public class WaterBender : MonoBehaviour {
 
 
     int attack() {
+        print("attacks");
         anim.SetTrigger("PunchTrigger");
 
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
-        FireBall elementShot = projectile.GetComponent<FireBall>();
-        elementShot.setTarget(target);
+        //Water water = GetComponent<Water>();
+
+        water.Play();
+        
+       
+ 
+
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
+        //FireBall elementShot = projectile.GetComponent<FireBall>();
+        //elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
         int amount;
-        //print("attacks");
+        print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;

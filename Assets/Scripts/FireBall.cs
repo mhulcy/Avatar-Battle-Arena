@@ -18,7 +18,7 @@ public class FireBall : MonoBehaviour
     {
         print("ran");
        // this.transform.position = target.transform.position;
-            this.transform.position = Vector3.MoveTowards(this.transform.position, target.transform.position, _speed);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(target.transform.position.x, target.transform.position.y + 1.1f, target.transform.position.z), _speed);
         _time += Time.deltaTime;
 
         if (_time > 1.5)
