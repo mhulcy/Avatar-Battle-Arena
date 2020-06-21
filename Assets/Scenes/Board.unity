@@ -7207,7 +7207,7 @@ PrefabInstance:
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy_Piece
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
         type: 3}
