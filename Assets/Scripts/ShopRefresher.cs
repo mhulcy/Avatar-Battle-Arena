@@ -77,8 +77,72 @@ public class ShopRefresher : MonoBehaviour
     int buttonFive;
     public void resetShop()
     {
-        //disable all buttons
-        buttonOne = getSwitchCase();
+        FireWarriorOne = GameObject.Find("FireWarrior");
+        FireWarriorOne.Enabled == false;
+       /* FireWarriorTwo.Enabled == false;
+        FireWarriorThree.Enabled == false;
+        FireWarriorFour.Enabled == false;
+        FireWarriorFive.Enabled == false;
+        FireAssassinOne.Enabled == false;
+        FireAssassinTwo.Enabled == false;
+        FireAssassinThree.Enabled == false;
+        FireAssassinFour.Enabled == false;
+        FireAssassinFive.Enabled == false;
+        FireBenderOne.Enabled == false;
+        FireBenderTwo.Enabled == false;
+        FireBenderThree.Enabled == false;
+        FireBenderFour.Enabled == false;
+        FireBenderFive.Enabled == false;
+
+        WaterWarriorOne.Enabled == false;
+        WaterWarriorTwo.Enabled == false;
+        WaterWarriorThree.Enabled == false;
+        WaterWarriorFour.Enabled == false;
+        WaterWarriorFive.Endabled == false;
+        WaterAssassinOne.Enabled == false;
+        WaterAssassinTwo.Enabled == false;
+        WaterAssassinThree.Enabled == false;
+        WaterAssassinFour.Enabled == false; 
+        WaterAssassinFive.Enabled == false;
+        WaterBenderOne.Enabled == false;
+        WaterBenderTwo.Enabled == false;
+        WaterBenderThree.Enabled == false;
+        WaterBenderFour.Enabled == false;
+        WaterBenderFive.Enabled == false;
+
+        EarthWarriorOne.Enabled == false;
+        EarthWarriorTwo.Enabled == false;
+        EarthWarriorThree.Enabled == false;
+        EarthWarriorFour.Enabled == false;
+        EarthWarriorFive.Enabled == false;
+        EarthAssassinOne.Enabled == false;
+        EarthAssassinTwo.Enabled == false;
+        EarthAssassinThree.Enabled == false;
+        EarthAssassinFour.Enabled == false;
+        EarthAssassinFive.Enabled == false;
+        EarthBenderOne.Enabled == false;
+        EarthBenderTwo.Enabled == false;
+        EarthBenderThree.Enabled == false;
+        EarthBenderFour.Enabled == false;
+        EarthBenderFive.Enabled == false;
+
+        AirWarriorOne;
+        AirWarriorTwo;
+        AirWarriorThree;
+        AirWarriorFour;
+        AirWarriorFive;
+        AirAssassinOne;
+        AirAssassinTwo;
+        AirAssassinThree;
+        AirAssassinFour;
+        AirAssassinFive;
+        AirBenderOne;
+        AirBenderTwo;
+        AirBenderThree;
+        AirBenderFour;
+        AirBenderFive;
+
+    buttonOne = getSwitchCase();
         setButton(buttonOne);
         buttonTwo = getSwitchCase();
 
@@ -87,7 +151,7 @@ public class ShopRefresher : MonoBehaviour
         buttonFour = getSwitchCase();
 
         buttonFive = getSwitchCase();
-
+       */
     }
     private int getCaseSwich()
     {
