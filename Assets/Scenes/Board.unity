@@ -10893,11 +10893,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Air Bender
       objectReference: {fileID: 0}
-    - target: {fileID: 5195070443504545876, guid: 34aa66b2bd666da458e4b4a0088ae482,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy_Piece
-      objectReference: {fileID: 0}
     - target: {fileID: 5195070443504840756, guid: 34aa66b2bd666da458e4b4a0088ae482,
         type: 3}
       propertyPath: m_LocalPosition.x
