@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ff7486928549b544f8cc0d3c4eab51b1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - AirBender: {fileID: 5195070443504545876, guid: 34aa66b2bd666da458e4b4a0088ae482,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
