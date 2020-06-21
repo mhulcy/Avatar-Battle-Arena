@@ -65,10 +65,6 @@ public class WaterBender : MonoBehaviour {
 
 
     }
-
-
-
-
     int attack() {
         print("attacks");
         anim.SetTrigger("PunchTrigger");
