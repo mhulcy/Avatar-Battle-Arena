@@ -23,7 +23,7 @@ public class AirBender : MonoBehaviour
 
 
     public GameObject elementPrefab;
-    //ParticleSystem air;
+    ParticleSystem air;
 
     public NavMeshAgent agent;
   //  PlayerController playerControls = new PlayerController();
@@ -31,7 +31,7 @@ public class AirBender : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-       // air = elementPrefab.GetComponent<ParticleSystem>();
+        air = elementPrefab.GetComponent<ParticleSystem>();
 
     }
 
@@ -41,7 +41,7 @@ public class AirBender : MonoBehaviour
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench)
         {
-            //air.Play();
+            
             playerControls = this.GetComponent<PlayerController>();
             if (!playerControls.playerBench)
             {
@@ -60,11 +60,36 @@ public class AirBender : MonoBehaviour
                         timer -= Time.deltaTime;
                         if (timer < 0)
                         {
-                            print(attack());
-
-
-                            //if (projectile.transform.position == target.transform.position)
-                            //Destroy(projectile);
+                            if (target.GetComponent<Warrior_Enemy>() != null)
+                            {
+                                Warrior_Enemy instance = target.GetComponent<Warrior_Enemy>();
+                                instance.takeDamage(attack());
+                            }
+                            else if (target.GetComponent<Assasin_Enemy>() != null)
+                            {
+                                Assasin_Enemy instance = target.GetComponent<Assasin_Enemy>();
+                                instance.takeDamage(attack());
+                            }
+                            else if (target.GetComponent<FireBenderEnemy>() != null)
+                            {
+                                FireBenderEnemy instance = target.GetComponent<FireBenderEnemy>();
+                                instance.takeDamage(attack());
+                            }
+                            else if (target.GetComponent<WaterBender_Enemy>() != null)
+                            {
+                                WaterBender_Enemy instance = target.GetComponent<WaterBender_Enemy>();
+                                instance.takeDamage(attack());
+                            }
+                            else if (target.GetComponent<EarthBender_Enemy>() != null)
+                            {
+                                EarthBender_Enemy instance = target.GetComponent<EarthBender_Enemy>();
+                                instance.takeDamage(attack());
+                            }
+                            else if (target.GetComponent<Airbender_Enemy>() != null)
+                            {
+                                Airbender_Enemy instance = target.GetComponent<Airbender_Enemy>();
+                                instance.takeDamage(attack());
+                            }
 
                         }
                     }
@@ -80,7 +105,17 @@ public class AirBender : MonoBehaviour
     }
 
     int attack() {
+        int amount;
+        //print("attacks");
+        timer = 1f;
+        int addedDmg = UnityEngine.Random.Range(-5, 6);
+        amount = damage + addedDmg;
         anim.SetTrigger("PunchTrigger");
+        air.Play();
+        return amount;
+
+
+        
        //air.Play();
         projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity) as GameObject;
         Tornado elementShot = projectile.GetComponent<Tornado>();
@@ -90,12 +125,7 @@ public class AirBender : MonoBehaviour
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
-        int amount;
-        //print("attacks");
-        timer = 1f;
-        int addedDmg = UnityEngine.Random.Range(-5, 6);
-        amount = damage + addedDmg;
-        return amount;
+        
     }
 
     GameObject findEnemy() {
