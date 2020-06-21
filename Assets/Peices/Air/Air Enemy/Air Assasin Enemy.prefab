@@ -2972,12 +2972,11 @@ GameObject:
   - component: {fileID: 1049693341}
   - component: {fileID: 1049693340}
   - component: {fileID: 1049693337}
-  - component: {fileID: 1049693338}
-  - component: {fileID: 1049693339}
   - component: {fileID: -4695336691474742776}
+  - component: {fileID: -5350059969282929983}
   m_Layer: 0
-  m_Name: Air Assassin
-  m_TagString: Player_Piece
+  m_Name: Air Assasin Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3074,33 +3073,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1049693338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641505195311475700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1049693337}
-  playerBench: 0
---- !u!114 &1049693339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641505195311475700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d02cd4dff998c745884cda9db133f04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1049693337}
 --- !u!114 &-4695336691474742776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3114,6 +3086,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AirAssassin: {fileID: 641505195311475700}
+--- !u!114 &-5350059969282929983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641505195311475700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea7e01b965035c478f30c390fcd4d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1049693337}
 --- !u!1 &641505195311479732
 GameObject:
   m_ObjectHideFlags: 0

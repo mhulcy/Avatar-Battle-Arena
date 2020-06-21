@@ -1677,11 +1677,10 @@ GameObject:
   - component: {fileID: 1675502951214708801}
   - component: {fileID: 27890834380864984}
   - component: {fileID: 5413842229711819033}
-  - component: {fileID: 8699174696107005293}
-  - component: {fileID: 1243951651985730401}
+  - component: {fileID: -1364772445061382535}
   m_Layer: 0
-  m_Name: Fire Assassin
-  m_TagString: Player_Piece
+  m_Name: Fire Assasin Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1791,7 +1790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireAssassin: {fileID: 6483312239768880349}
---- !u!114 &8699174696107005293
+--- !u!114 &-1364772445061382535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1800,21 +1799,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6483312239768880349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 27890834380864984}
-  playerBench: 0
---- !u!114 &1243951651985730401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6483312239768880349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d02cd4dff998c745884cda9db133f04, type: 3}
+  m_Script: {fileID: 11500000, guid: bea7e01b965035c478f30c390fcd4d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 27890834380864984}

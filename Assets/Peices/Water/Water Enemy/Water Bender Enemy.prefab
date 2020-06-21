@@ -3119,8 +3119,8 @@ GameObject:
   - component: {fileID: 204323895}
   - component: {fileID: 2994420230456266648}
   m_Layer: 0
-  m_Name: Water Bender
-  m_TagString: Player_Piece
+  m_Name: Water Bender Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
