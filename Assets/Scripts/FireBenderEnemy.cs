@@ -9,7 +9,7 @@ using UnityEngine.AI;
 
 public class FireBenderEnemy : MonoBehaviour
 {
-
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -38,66 +38,58 @@ public class FireBenderEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
+        if (combatState) {
 
 
 
             target = findEnemy();
-            if (target != null)
-            {
+            if (target != null) {
                 targetCoords = target.transform.position;
                 anim.SetBool("IsWalking", true);
-                if (findDistance(this.transform.position, targetCoords) < range)
-                {
+                if (findDistance(this.transform.position, targetCoords) < range) {
                     anim.SetBool("IsWalking", false);
                     agent.isStopped = true;
                     timer -= Time.deltaTime;
-                    if (timer < 0)
-                    {
-                    if (target.GetComponent<AirBender>() != null)
-                    {
-                        AirBender instance = target.GetComponent<AirBender>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<Assasin>() != null)
-                    {
-                        Assasin instance = target.GetComponent<Assasin>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<EarthBender>() != null)
-                    {
-                        EarthBender instance = target.GetComponent<EarthBender>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<FireBender>() != null)
-                    {
-                        FireBender instance = target.GetComponent<FireBender>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<Warrior>() != null)
-                    {
-                        Warrior instance = target.GetComponent<Warrior>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<WaterBender>() != null)
-                    {
-                        WaterBender instance = target.GetComponent<WaterBender>();
-                        instance.takeDamage(attack());
-                    }
+                    if (timer < 0) {
+                        if (target.GetComponent<AirBender>() != null) {
+                            AirBender instance = target.GetComponent<AirBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<Assasin>() != null) {
+                            Assasin instance = target.GetComponent<Assasin>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<EarthBender>() != null) {
+                            EarthBender instance = target.GetComponent<EarthBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<FireBender>() != null) {
+                            FireBender instance = target.GetComponent<FireBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<Warrior>() != null) {
+                            Warrior instance = target.GetComponent<Warrior>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<WaterBender>() != null) {
+                            WaterBender instance = target.GetComponent<WaterBender>();
+                            instance.takeDamage(attack());
+                        }
 
+                    }
                 }
-                }
-                else
-                {
+                else {
 
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
-            
+
+            }
+
+
         }
-
-
-
     }
 
 
@@ -164,6 +156,13 @@ public class FireBenderEnemy : MonoBehaviour
         return distance;
 
     }
+    public void isCombat() {
+        print("combat ");
+        combatState = true;
+    }
 
+    public void notCombat() {
+        combatState = false;
+    }
 
 }

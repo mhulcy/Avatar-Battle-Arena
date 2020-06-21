@@ -10,6 +10,7 @@ using System.Runtime.CompilerServices;
 
 public class Warrior : MonoBehaviour
 {
+    bool combatState = false;
     int health = 100;
     const int range = 3;
     int damage = 20;
@@ -35,7 +36,7 @@ public class Warrior : MonoBehaviour
     void Update()
     {
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
+        if (!playerControls.playerBench && combatState)
         {
             target = findEnemy();
             if (target != null)
@@ -152,6 +153,15 @@ public class Warrior : MonoBehaviour
         return distance;
 
     }
+    public void isCombat() {
+        print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
+    }
+
 
 
 }

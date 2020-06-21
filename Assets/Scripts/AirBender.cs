@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class AirBender : MonoBehaviour
 {
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -43,7 +44,7 @@ public class AirBender : MonoBehaviour
         state = state.GetComponent<NewStateMachine>();
 
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench && state.state == currentState.COMBAT)
+        if (!playerControls.playerBench && combatState)
         {
             
                 target = findEnemy();
@@ -162,5 +163,13 @@ public class AirBender : MonoBehaviour
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+    public void isCombat() {
+        print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
     }
 }
