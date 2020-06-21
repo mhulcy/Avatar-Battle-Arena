@@ -124,22 +124,22 @@ public class NewStateMachine : MonoBehaviour
     }
     public void PlayGame()
     {
-        print("play game");
+        //print("play game");
         prevScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(2);
     }
 
     public void GoToContols()
     {
-        print("Go to controls");
+        //print("Go to controls");
         prevScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(1);
     }
 
     public void GoBack()
     {
-        print("go back");
-        SceneManager.LoadScene(prevScene);
+        //print("go back");
+        SceneManager.LoadScene("Board");
     }
 
 
