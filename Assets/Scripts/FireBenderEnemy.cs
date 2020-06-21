@@ -6,13 +6,13 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
-using System.Runtime.CompilerServices;
 
-public class Warrior_Enemy : MonoBehaviour
+public class FireBenderEnemy : MonoBehaviour
 {
-    int health = 100;
-    const int range = 3;
-    int damage = 20;
+
+    int health = 60;
+    const int range = 6;
+    int damage = 30;
     int tolerance = 5;
     float timer = 1f;
 
@@ -20,10 +20,14 @@ public class Warrior_Enemy : MonoBehaviour
 
     Animator anim;
     GameObject target;
+    public GameObject projectile;
 
+
+    public GameObject elementPrefab;
 
     public NavMeshAgent agent;
     PlayerController playerControls = new PlayerController();
+
 
     void Start()
     {
@@ -34,7 +38,7 @@ public class Warrior_Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
 
 
 
@@ -51,17 +55,27 @@ public class Warrior_Enemy : MonoBehaviour
                     if (timer < 0)
                     {
                         print(attack());
+
+
+                        //if (projectile.transform.position == target.transform.position)
+                        //Destroy(projectile);
+
                     }
                 }
                 else
                 {
+
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
             
         }
 
+
+
     }
+
+
 
     public void takeDamage(int amount)
     {
@@ -71,14 +85,20 @@ public class Warrior_Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-
-
     int attack()
     {
         anim.SetTrigger("PunchTrigger");
+
+        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f, this.transform.position.z), Quaternion.identity) as GameObject;
+        FireBall elementShot = projectile.GetComponent<FireBall>();
+        elementShot.setTarget(target);
+        //elementShot.transform.position = target.transform.position;
+
+        //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        //Destroy(projectile);
+
         int amount;
-        print("attacks");
+        //print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
@@ -108,6 +128,7 @@ public class Warrior_Enemy : MonoBehaviour
                 }
             }
         }
+
 
         return nearestEnemy;
     }

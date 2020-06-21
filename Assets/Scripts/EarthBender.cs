@@ -14,7 +14,7 @@ public class EarthBender : MonoBehaviour {
     int tolerance = 5;
     float timer = 2f;
 
-
+    PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
@@ -34,28 +34,37 @@ public class EarthBender : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        target = findEnemy();
-        if (target != null) {
-            targetCoords = target.transform.position;
-            anim.SetBool("IsWalking", true);
-            if (findDistance(this.transform.position, targetCoords) < range) {
-                anim.SetBool("IsWalking", false);
-                agent.isStopped = true;
-                timer -= Time.deltaTime;
-                if (timer < 0) {
-                    //Water.Stop();
-                    print(attack());
 
-                   // earth.Stop();
-                    //if (projectile.transform.position == target.transform.position)
-                    //Destroy(projectile);
+        playerControls = this.GetComponent<PlayerController>();
+        if (!playerControls.playerBench)
+        {
+            target = findEnemy();
+            if (target != null)
+            {
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
+                {
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
+                    {
+                        //Water.Stop();
+                        print(attack());
 
+                        // earth.Stop();
+                        //if (projectile.transform.position == target.transform.position)
+                        //Destroy(projectile);
+
+                    }
                 }
-            }
-            else {
+                else
+                {
 
-                agent.isStopped = false;
-                agent.SetDestination(targetCoords);
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
+                }
             }
         }
 
