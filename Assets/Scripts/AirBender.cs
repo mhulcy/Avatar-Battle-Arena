@@ -14,7 +14,7 @@ public class AirBender : MonoBehaviour
     int damage = 30;
     int tolerance = 5;
     float timer = 1f;
-
+    PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
@@ -26,7 +26,7 @@ public class AirBender : MonoBehaviour
     //ParticleSystem air;
 
     public NavMeshAgent agent;
-    PlayerController playerControls = new PlayerController();
+  //  PlayerController playerControls = new PlayerController();
 
     void Start()
     {
@@ -38,33 +38,42 @@ public class AirBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //air.Play();
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench) {
+        if (!playerControls.playerBench)
+        {
+            //air.Play();
+            playerControls = this.GetComponent<PlayerController>();
+            if (!playerControls.playerBench)
+            {
 
 
 
-            target = findEnemy();
-            if (target != null) {
-                targetCoords = target.transform.position;
-                anim.SetBool("IsWalking", true);
-                if (findDistance(this.transform.position, targetCoords) < range) {
-                    anim.SetBool("IsWalking", false);
-                    agent.isStopped = true;
-                    timer -= Time.deltaTime;
-                    if (timer < 0) {
-                        print(attack());
+                target = findEnemy();
+                if (target != null)
+                {
+                    targetCoords = target.transform.position;
+                    anim.SetBool("IsWalking", true);
+                    if (findDistance(this.transform.position, targetCoords) < range)
+                    {
+                        anim.SetBool("IsWalking", false);
+                        agent.isStopped = true;
+                        timer -= Time.deltaTime;
+                        if (timer < 0)
+                        {
+                            print(attack());
 
 
-                        //if (projectile.transform.position == target.transform.position)
-                        //Destroy(projectile);
+                            //if (projectile.transform.position == target.transform.position)
+                            //Destroy(projectile);
 
+                        }
                     }
-                }
-                else {
+                    else
+                    {
 
-                    agent.isStopped = false;
-                    agent.SetDestination(targetCoords);
+                        agent.isStopped = false;
+                        agent.SetDestination(targetCoords);
+                    }
                 }
             }
         }
