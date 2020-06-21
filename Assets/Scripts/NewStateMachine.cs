@@ -15,6 +15,19 @@ public class NewStateMachine : MonoBehaviour
 {
     private int prevScene;
 
+    public GameObject enemyAirBender;
+    public GameObject enemyAirAssasin;
+    public GameObject enemyAirWarrior;
+    public GameObject enemyEarthWarrior;
+    public GameObject enemyEarthBender;
+    public GameObject enemyEarthAssasin;
+    public GameObject enemyWaterWarrior;
+    public GameObject enemyWaterBender;
+    public GameObject enemyWaterAssasin;
+    public GameObject enemyFireWarrior;
+    public GameObject enemyFireAssasin;
+    public GameObject enemyFireBender;
+
     private GameObject[] enemyArray;
     private GameObject[] playerArray;
     //private GameObject[] playersOnBoard;
@@ -26,7 +39,7 @@ public class NewStateMachine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        print("in start");
         state = currentState.BUY;
        // SceneManager.LoadScene(0);
 
@@ -37,9 +50,10 @@ public class NewStateMachine : MonoBehaviour
     
     void Update()
     {
-
+        //print("update");
         if (state == currentState.COMBAT)
         {
+            turnOnCombat();  
             isCombatOver();
         }
 
@@ -49,6 +63,14 @@ public class NewStateMachine : MonoBehaviour
         }
     }
     
+
+    void turnOnCombat()
+    {
+        print("turning on combat");
+        Airbender_Enemy airEnemy = enemyAir.GetComponent<Airbender_Enemy>();
+        airEnemy.isCombat();
+    }
+
     void beginCombat()
     {
         
@@ -56,6 +78,8 @@ public class NewStateMachine : MonoBehaviour
 
     void isCombatOver()
     {
+
+       // print("checking if combat is over");
         bool onBoard = false;
 
         enemyArray = GameObject.FindGameObjectsWithTag("Enemy_Piece");
@@ -83,7 +107,7 @@ public class NewStateMachine : MonoBehaviour
             }
             else if (!onBoard)
             {
-               // print("ends due to players");
+                
                 calculateDamage(2);
 
             }
@@ -109,17 +133,20 @@ public class NewStateMachine : MonoBehaviour
         //Determine whether the object at index 0 is a player or enemy
          if(winner == 1) 
         {
+            print("enemy HP: " + enemyHP);
             enemyHP -= 10;
         }
         else
         {
             playerHP -= 10;
+            print("Player HP: " + playerHP);
         }
         state = currentState.BUY;
     }
 
     public void setStateCombat()
     {
+        print("Inside set state combat");
         state = currentState.COMBAT;
     }
     public void PlayGame()
@@ -142,6 +169,10 @@ public class NewStateMachine : MonoBehaviour
         SceneManager.LoadScene(prevScene);
     }
 
+   public currentState getState()
+    {
+        return state;
+    }
 
 
 

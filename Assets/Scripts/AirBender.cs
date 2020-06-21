@@ -17,6 +17,8 @@ public class AirBender : MonoBehaviour
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
+    NewStateMachine state;
+
     Animator anim;
     GameObject target;
     public GameObject projectile;
@@ -38,16 +40,12 @@ public class AirBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        state = state.GetComponent<NewStateMachine>();
+
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
+        if (!playerControls.playerBench && state.state == currentState.COMBAT)
         {
             
-            playerControls = this.GetComponent<PlayerController>();
-            if (!playerControls.playerBench)
-            {
-
-
-
                 target = findEnemy();
                 if (target != null)
                 {
@@ -99,7 +97,7 @@ public class AirBender : MonoBehaviour
                         agent.isStopped = false;
                         agent.SetDestination(targetCoords);
                     }
-                }
+                
             }
         }
     }

@@ -9,6 +9,8 @@ using UnityEngine.AI;
 
 public class Airbender_Enemy : MonoBehaviour
 {
+    // GameObject State_Machine;
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -38,64 +40,68 @@ public class Airbender_Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // NewStateMachine turnState = State_Machine.GetComponent<NewStateMachine>();
+        //print(turnState.getState());
+        //playerControls = this.GetComponent<PlayerController>();
+
+
+
         
-            //air.Play();
-            playerControls = this.GetComponent<PlayerController>();
-           
-
-
-                target = findEnemy();
-                if (target != null)
+            target = findEnemy();
+            if (target != null)
+            {
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
                 {
-                    targetCoords = target.transform.position;
-                    anim.SetBool("IsWalking", true);
-                    if (findDistance(this.transform.position, targetCoords) < range)
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
                     {
-                        anim.SetBool("IsWalking", false);
-                        agent.isStopped = true;
-                        timer -= Time.deltaTime;
-                        if (timer < 0)
+                        if (target.GetComponent<AirBender>() != null)
                         {
-                    if (target.GetComponent<AirBender>() != null)
-                    {
-                        AirBender instance = target.GetComponent<AirBender>();
-                        instance.takeDamage(attack());
+                            AirBender instance = target.GetComponent<AirBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<Assasin>() != null)
+                        {
+                            Assasin instance = target.GetComponent<Assasin>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<EarthBender>() != null)
+                        {
+                            EarthBender instance = target.GetComponent<EarthBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<FireBender>() != null)
+                        {
+                            FireBender instance = target.GetComponent<FireBender>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<Warrior>() != null)
+                        {
+                            Warrior instance = target.GetComponent<Warrior>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<WaterBender>() != null)
+                        {
+                            WaterBender instance = target.GetComponent<WaterBender>();
+                            instance.takeDamage(attack());
+                        }
+
                     }
-                    else if (target.GetComponent<Assasin>() != null)
-                    {
-                        Assasin instance = target.GetComponent<Assasin>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<EarthBender>() != null)
-                    {
-                        EarthBender instance = target.GetComponent<EarthBender>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<FireBender>() != null)
-                    {
-                        FireBender instance = target.GetComponent<FireBender>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<Warrior>() != null)
-                    {
-                        Warrior instance = target.GetComponent<Warrior>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<WaterBender>() != null)
-                    {
-                        WaterBender instance = target.GetComponent<WaterBender>();
-                        instance.takeDamage(attack());
-                    }
+                }
+                else
+                {
+
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
+
 
                 }
-                    }
-                    else
-                    {
-
-                        agent.isStopped = false;
-                        agent.SetDestination(targetCoords);
-                    
-                }
+            
             
         }
     }
@@ -164,5 +170,16 @@ public class Airbender_Enemy : MonoBehaviour
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+
+    public void isCombat()
+    {
+        print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat()
+    {
+        combatState = false;
     }
 }
