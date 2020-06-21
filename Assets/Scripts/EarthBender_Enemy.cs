@@ -7,7 +7,8 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class EarthBender : MonoBehaviour {
+public class EarthBender_Enemy : MonoBehaviour
+{
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -26,18 +27,18 @@ public class EarthBender : MonoBehaviour {
     public NavMeshAgent agent;
 
 
-    void Start() {
+    void Start()
+    {
         anim = GetComponent<Animator>();
         earth = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
 
-        playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
-        {
+       
             target = findEnemy();
             if (target != null)
             {
@@ -65,13 +66,23 @@ public class EarthBender : MonoBehaviour {
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
-            }
+            
         }
 
 
 
     }
-    int attack() {
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    int attack()
+    {
         print("attacks");
         anim.SetTrigger("PunchTrigger");
 
@@ -98,27 +109,35 @@ public class EarthBender : MonoBehaviour {
         return amount;
     }
 
-    GameObject findEnemy() {
+    GameObject findEnemy()
+    {
         double min = 100000;
         GameObject nearestEnemy = null;
         double value;
 
-        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
-        for (int i = 0; i < gameObjects.Length; ++i) {
-            // print("found enemy");
-            value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Player_Piece");
+        for (int i = 0; i < gameObjects.Length; ++i)
+        {
+            PlayerController benchDetector = gameObjects[i].GetComponent<PlayerController>();
+            if (!benchDetector.playerBench)
+            {
+                // print("found enemy");
+                value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
                 Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) +
                 Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
-            if (value < min) {
-                min = value;
-                nearestEnemy = gameObjects[i];
+                if (value < min)
+                {
+                    min = value;
+                    nearestEnemy = gameObjects[i];
+                }
             }
         }
 
         return nearestEnemy;
     }
 
-    double findDistance(Vector3 myPos, Vector3 targetPos) {
+    double findDistance(Vector3 myPos, Vector3 targetPos)
+    {
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 

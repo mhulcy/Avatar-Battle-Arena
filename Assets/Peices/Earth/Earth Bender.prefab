@@ -3650,7 +3650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementPrefab: {fileID: 1675176523}
-  agent: {fileID: 0}
+  agent: {fileID: 8002174727394737629}
 --- !u!1 &1366204537301078232
 GameObject:
   m_ObjectHideFlags: 0
