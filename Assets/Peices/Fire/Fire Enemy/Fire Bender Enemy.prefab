@@ -2266,8 +2266,8 @@ GameObject:
   - component: {fileID: -9120718735554408464}
   - component: {fileID: 5709722616449256144}
   m_Layer: 0
-  m_Name: Fire Bender
-  m_TagString: Player_Piece
+  m_Name: Fire Bender Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

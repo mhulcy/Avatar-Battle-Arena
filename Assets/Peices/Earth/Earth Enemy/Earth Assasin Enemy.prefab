@@ -3257,13 +3257,12 @@ GameObject:
   - component: {fileID: 2767130447679154424}
   - component: {fileID: 3461817578418880355}
   - component: {fileID: 851392308538108234}
-  - component: {fileID: 6106890448280228445}
-  - component: {fileID: 5089988356490483542}
   - component: {fileID: 8011293202731260410}
   - component: {fileID: -8492655717001707827}
+  - component: {fileID: -5248347201898130005}
   m_Layer: 0
-  m_Name: Earth Assassin
-  m_TagString: Player_Piece
+  m_Name: Earth Assasin Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3338,33 +3337,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6106890448280228445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2767130447686587120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d02cd4dff998c745884cda9db133f04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 8011293202731260410}
---- !u!114 &5089988356490483542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2767130447686587120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 8011293202731260410}
-  playerBench: 0
 --- !u!195 &8011293202731260410
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3400,6 +3372,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EarthAssassin: {fileID: 2767130447686587120}
+--- !u!114 &-5248347201898130005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767130447686587120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea7e01b965035c478f30c390fcd4d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 8011293202731260410}
 --- !u!1 &2767130447686589650
 GameObject:
   m_ObjectHideFlags: 0

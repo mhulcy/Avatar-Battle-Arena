@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 8522444084456096907}
   m_Layer: 0
   m_Name: Water Assassin
-  m_TagString: Untagged
+  m_TagString: Player_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,6 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1450388590}
+  playerBench: 0
 --- !u!195 &1450388590
 NavMeshAgent:
   m_ObjectHideFlags: 0

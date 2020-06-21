@@ -3120,7 +3120,7 @@ GameObject:
   - component: {fileID: 2994420230456266648}
   m_Layer: 0
   m_Name: Water Bender
-  m_TagString: Untagged
+  m_TagString: Player_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3208,6 +3208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 204323894}
+  playerBench: 0
 --- !u!195 &204323894
 NavMeshAgent:
   m_ObjectHideFlags: 0
