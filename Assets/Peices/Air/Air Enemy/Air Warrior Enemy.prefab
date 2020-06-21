@@ -2669,13 +2669,12 @@ GameObject:
   - component: {fileID: 8128577162675816029}
   - component: {fileID: 6208227207824450003}
   - component: {fileID: 2796502292493211424}
-  - component: {fileID: 3120936674631201757}
-  - component: {fileID: 2202551491191290508}
   - component: {fileID: 771979310595947207}
   - component: {fileID: 4217515786464401678}
+  - component: {fileID: 2506543897573445389}
   m_Layer: 0
-  m_Name: Air Warrior
-  m_TagString: Player_Piece
+  m_Name: Air Warrior Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2750,33 +2749,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3120936674631201757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8128577162668582585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 771979310595947207}
---- !u!114 &2202551491191290508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8128577162668582585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 771979310595947207}
-  playerBench: 0
 --- !u!195 &771979310595947207
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2812,6 +2784,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AirWarrior: {fileID: 8128577162668582585}
+--- !u!114 &2506543897573445389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128577162668582585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3937c57858d08a54fb1e9cb57fb50c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 771979310595947207}
 --- !u!1 &8128577162668583549
 GameObject:
   m_ObjectHideFlags: 0
