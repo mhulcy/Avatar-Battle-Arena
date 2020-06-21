@@ -50,8 +50,37 @@ public class Warrior_Enemy : MonoBehaviour
                     timer -= Time.deltaTime;
                     if (timer < 0)
                     {
-                        print(attack());
+                    if (target.GetComponent<AirBender>() != null)
+                    {
+                        AirBender instance = target.GetComponent<AirBender>();
+                        instance.takeDamage(attack());
                     }
+                    else if (target.GetComponent<Assasin>() != null)
+                    {
+                        Assasin instance = target.GetComponent<Assasin>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<EarthBender>() != null)
+                    {
+                        EarthBender instance = target.GetComponent<EarthBender>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<FireBender>() != null)
+                    {
+                        FireBender instance = target.GetComponent<FireBender>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<Warrior>() != null)
+                    {
+                        Warrior instance = target.GetComponent<Warrior>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<WaterBender>() != null)
+                    {
+                        WaterBender instance = target.GetComponent<WaterBender>();
+                        instance.takeDamage(attack());
+                    }
+                }
                 }
                 else
                 {
