@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class AirBender : MonoBehaviour
 {
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -16,6 +17,8 @@ public class AirBender : MonoBehaviour
     float timer = 1f;
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
+
+    NewStateMachine state;
 
     Animator anim;
     GameObject target;
@@ -38,16 +41,16 @@ public class AirBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //state = state.GetComponent<NewStateMachine>();
+
         playerControls = this.GetComponent<PlayerController>();
+<<<<<<< HEAD
         if (!playerControls.playerBench)
+=======
+        if (!playerControls.playerBench && combatState)
+>>>>>>> d8b9bd9c2761ecda03c9d240e29166e6deee668c
         {
             
-            playerControls = this.GetComponent<PlayerController>();
-            if (!playerControls.playerBench)
-            {
-
-
-
                 target = findEnemy();
                 if (target != null)
                 {
@@ -99,7 +102,7 @@ public class AirBender : MonoBehaviour
                         agent.isStopped = false;
                         agent.SetDestination(targetCoords);
                     }
-                }
+                
             }
         }
     }
@@ -123,7 +126,7 @@ public class AirBender : MonoBehaviour
 
         anim.SetTrigger("PunchTrigger");
         air.Play();
-        return amount;
+        
 
 
 
@@ -136,8 +139,8 @@ public class AirBender : MonoBehaviour
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
+        return amount;
 
-        
     }
 
     GameObject findEnemy() {
@@ -164,5 +167,13 @@ public class AirBender : MonoBehaviour
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+    public void isCombat() {
+        print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
     }
 }
