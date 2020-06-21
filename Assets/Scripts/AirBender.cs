@@ -40,10 +40,10 @@ public class AirBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        state = state.GetComponent<NewStateMachine>();
+        //state = state.GetComponent<NewStateMachine>();
 
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench && state.state == currentState.COMBAT)
+        if (!playerControls.playerBench)
         {
             
                 target = findEnemy();
@@ -121,7 +121,7 @@ public class AirBender : MonoBehaviour
 
         anim.SetTrigger("PunchTrigger");
         air.Play();
-        return amount;
+        
 
 
 
@@ -134,8 +134,8 @@ public class AirBender : MonoBehaviour
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
+        return amount;
 
-        
     }
 
     GameObject findEnemy() {
