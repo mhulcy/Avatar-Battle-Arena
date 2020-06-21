@@ -7,8 +7,11 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
+
+
 public class AirBender : MonoBehaviour
 {
+     public bool combatState ;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -16,6 +19,8 @@ public class AirBender : MonoBehaviour
     float timer = 1f;
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
+
+    NewStateMachine state;
 
     Animator anim;
     GameObject target;
@@ -30,6 +35,7 @@ public class AirBender : MonoBehaviour
 
     void Start()
     {
+        combatState = false;
         anim = GetComponent<Animator>();
         air = elementPrefab.GetComponent<ParticleSystem>();
 
@@ -38,16 +44,25 @@ public class AirBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //state = state.GetComponent<NewStateMachine>();
+
         playerControls = this.GetComponent<PlayerController>();
+<<<<<<< HEAD
+        if (state.state == currentState.COMBAT)
+        {
+            print("MICHAEL");
+        }
+        
+        if (!playerControls.playerBench && combatState)
+=======
+
         if (!playerControls.playerBench)
+
+        if (!playerControls.playerBench && combatState)
+
+>>>>>>> 0934c8c9c2291cb8ea1aa7a9b3304ee39a51bffc
         {
             
-            playerControls = this.GetComponent<PlayerController>();
-            if (!playerControls.playerBench)
-            {
-
-
-
                 target = findEnemy();
                 if (target != null)
                 {
@@ -99,7 +114,7 @@ public class AirBender : MonoBehaviour
                         agent.isStopped = false;
                         agent.SetDestination(targetCoords);
                     }
-                }
+                
             }
         }
     }
@@ -164,5 +179,64 @@ public class AirBender : MonoBehaviour
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+    public void isCombat() {
+        target = findEnemy();
+        if (target != null)
+        {
+            targetCoords = target.transform.position;
+            anim.SetBool("IsWalking", true);
+            if (findDistance(this.transform.position, targetCoords) < range)
+            {
+                anim.SetBool("IsWalking", false);
+                agent.isStopped = true;
+                timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    if (target.GetComponent<Warrior_Enemy>() != null)
+                    {
+                        Warrior_Enemy instance = target.GetComponent<Warrior_Enemy>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<Assasin_Enemy>() != null)
+                    {
+                        Assasin_Enemy instance = target.GetComponent<Assasin_Enemy>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<FireBenderEnemy>() != null)
+                    {
+                        FireBenderEnemy instance = target.GetComponent<FireBenderEnemy>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<WaterBender_Enemy>() != null)
+                    {
+                        WaterBender_Enemy instance = target.GetComponent<WaterBender_Enemy>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<EarthBender_Enemy>() != null)
+                    {
+                        EarthBender_Enemy instance = target.GetComponent<EarthBender_Enemy>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<Airbender_Enemy>() != null)
+                    {
+                        Airbender_Enemy instance = target.GetComponent<Airbender_Enemy>();
+                        instance.takeDamage(attack());
+                    }
+
+                }
+            }
+            else
+            {
+
+                agent.isStopped = false;
+                agent.SetDestination(targetCoords);
+            }
+
+        }
+    }
+
+    public void notCombat() {
+        combatState = false;
     }
 }

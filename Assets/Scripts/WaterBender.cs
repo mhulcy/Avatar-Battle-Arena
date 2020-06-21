@@ -8,6 +8,7 @@ using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
 public class WaterBender : MonoBehaviour {
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -35,7 +36,7 @@ public class WaterBender : MonoBehaviour {
     void Update() {
 
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
+        if (!playerControls.playerBench && combatState)
         {
 
 
@@ -156,5 +157,13 @@ public class WaterBender : MonoBehaviour {
 
     }
 
+    public void isCombat() {
+        //print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
+    }
 
 }

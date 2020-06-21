@@ -8,6 +8,8 @@ using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
 public class EarthBender : MonoBehaviour {
+
+    bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -36,7 +38,7 @@ public class EarthBender : MonoBehaviour {
 
 
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
+        if (!playerControls.playerBench && combatState)
         {
             target = findEnemy();
             if (target != null)
@@ -156,6 +158,15 @@ public class EarthBender : MonoBehaviour {
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 
+    }
+
+    public void isCombat() {
+        //print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
     }
 
 

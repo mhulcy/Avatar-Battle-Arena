@@ -3,7 +3,12 @@ guid: d6250dbac0dcd174ca82cbf788bda6cb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - State_Machine: {fileID: 2234002587486408074, guid: f6c6635bd6f26784ab65c8e806791315,
+      type: 3}
+  - projectile: {instanceID: 0}
+  - elementPrefab: {instanceID: 0}
+  - agent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
