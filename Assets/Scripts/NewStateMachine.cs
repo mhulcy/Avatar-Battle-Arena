@@ -28,12 +28,13 @@ public class NewStateMachine : MonoBehaviour
     {
 
         state = currentState.BUY;
-        SceneManager.LoadScene(0);
+       // SceneManager.LoadScene(0);
 
     }
 
 
     // Update is called once per frame
+    
     void Update()
     {
 
@@ -47,7 +48,7 @@ public class NewStateMachine : MonoBehaviour
             print("THE GAME IS OVER");
         }
     }
-
+    
     void beginCombat()
     {
         
@@ -123,18 +124,21 @@ public class NewStateMachine : MonoBehaviour
     }
     public void PlayGame()
     {
+        print("play game");
         prevScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(2);
     }
 
     public void GoToContols()
     {
+        print("Go to controls");
         prevScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(1);
     }
 
     public void GoBack()
     {
+        print("go back");
         SceneManager.LoadScene(prevScene);
     }
 
