@@ -118,7 +118,7 @@ public class AirBender : MonoBehaviour
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
-        return amount;
+        
 
 
         anim.SetTrigger("PunchTrigger");
@@ -131,7 +131,7 @@ public class AirBender : MonoBehaviour
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
-        
+        return amount;
     }
 
     GameObject findEnemy() {
