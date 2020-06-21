@@ -44,11 +44,11 @@ public class AirBender : MonoBehaviour
         //state = state.GetComponent<NewStateMachine>();
 
         playerControls = this.GetComponent<PlayerController>();
-<<<<<<< HEAD
+
         if (!playerControls.playerBench)
-=======
+
         if (!playerControls.playerBench && combatState)
->>>>>>> d8b9bd9c2761ecda03c9d240e29166e6deee668c
+
         {
             
                 target = findEnemy();
