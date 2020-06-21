@@ -103,7 +103,14 @@ public class FireBender : MonoBehaviour
 
 
 
-
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
     int attack()
     {
         anim.SetTrigger("PunchTrigger");

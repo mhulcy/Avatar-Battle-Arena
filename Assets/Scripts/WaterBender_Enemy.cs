@@ -53,7 +53,36 @@ public class WaterBender_Enemy : MonoBehaviour
                 if (timer < 0)
                 {
                     //Water.Stop();
-                    print(attack());
+                    if (target.GetComponent<AirBender>() != null)
+                    {
+                        AirBender instance = target.GetComponent<AirBender>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<Assasin>() != null)
+                    {
+                        Assasin instance = target.GetComponent<Assasin>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<EarthBender>() != null)
+                    {
+                        EarthBender instance = target.GetComponent<EarthBender>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<FireBender>() != null)
+                    {
+                        FireBender instance = target.GetComponent<FireBender>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<Warrior>() != null)
+                    {
+                        Warrior instance = target.GetComponent<Warrior>();
+                        instance.takeDamage(attack());
+                    }
+                    else if (target.GetComponent<WaterBender>() != null)
+                    {
+                        WaterBender instance = target.GetComponent<WaterBender>();
+                        instance.takeDamage(attack());
+                    }
 
 
                     //if (projectile.transform.position == target.transform.position)
@@ -78,6 +107,15 @@ public class WaterBender_Enemy : MonoBehaviour
 
     int attack()
     {
+
+
+        int amount;
+        print("attacks");
+        timer = 1f;
+        int addedDmg = UnityEngine.Random.Range(-5, 6);
+        amount = damage + addedDmg;
+        return amount;
+
         print("attacks");
         anim.SetTrigger("PunchTrigger");
 
@@ -96,12 +134,7 @@ public class WaterBender_Enemy : MonoBehaviour
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
-        int amount;
-        print("attacks");
-        timer = 1f;
-        int addedDmg = UnityEngine.Random.Range(-5, 6);
-        amount = damage + addedDmg;
-        return amount;
+        
     }
 
     public void takeDamage(int amount)
