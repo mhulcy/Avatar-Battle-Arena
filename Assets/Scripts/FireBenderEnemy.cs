@@ -7,36 +7,39 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class WaterBender : MonoBehaviour {
+public class FireBenderEnemy : MonoBehaviour
+{
+
     int health = 60;
     const int range = 6;
     int damage = 30;
     int tolerance = 5;
-    float timer = 2f;
-    PlayerController playerControls = new PlayerController();
+    float timer = 1f;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
+    public GameObject projectile;
+
 
     public GameObject elementPrefab;
-    ParticleSystem water;
-    
-    public NavMeshAgent agent;
 
-    
-    void Start() {
+    public NavMeshAgent agent;
+    PlayerController playerControls = new PlayerController();
+
+
+    void Start()
+    {
         anim = GetComponent<Animator>();
-        water = elementPrefab.GetComponent<ParticleSystem>();
+
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        
 
-        playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
-        {
 
 
             target = findEnemy();
@@ -51,7 +54,6 @@ public class WaterBender : MonoBehaviour {
                     timer -= Time.deltaTime;
                     if (timer < 0)
                     {
-                        //Water.Stop();
                         print(attack());
 
 
@@ -66,63 +68,73 @@ public class WaterBender : MonoBehaviour {
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
-            }
+            
         }
+
 
 
     }
 
 
 
-
-    int attack() {
-        print("attacks");
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    int attack()
+    {
         anim.SetTrigger("PunchTrigger");
 
-        //Water water = GetComponent<Water>();
-
-        water.Play();
-        
-       
- 
-
-        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
-        //FireBall elementShot = projectile.GetComponent<FireBall>();
-        //elementShot.setTarget(target);
+        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f, this.transform.position.z), Quaternion.identity) as GameObject;
+        FireBall elementShot = projectile.GetComponent<FireBall>();
+        elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
         int amount;
-        print("attacks");
+        //print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
         return amount;
     }
 
-    GameObject findEnemy() {
+    GameObject findEnemy()
+    {
         double min = 100000;
         GameObject nearestEnemy = null;
         double value;
 
-        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Enemy_Piece");
-        for (int i = 0; i < gameObjects.Length; ++i) {
-            // print("found enemy");
-            value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Player_Piece");
+        for (int i = 0; i < gameObjects.Length; ++i)
+        {
+            PlayerController benchDetector = gameObjects[i].GetComponent<PlayerController>();
+            if (!benchDetector.playerBench)
+            {
+                // print("found enemy");
+                value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - this.transform.position.x, 2) +
                 Math.Pow(gameObjects[i].transform.position.y - this.transform.position.y, 2) +
                 Math.Pow(gameObjects[i].transform.position.z - this.transform.position.z, 2));
-            if (value < min) {
-                min = value;
-                nearestEnemy = gameObjects[i];
+                if (value < min)
+                {
+                    min = value;
+                    nearestEnemy = gameObjects[i];
+                }
             }
         }
+
 
         return nearestEnemy;
     }
 
-    double findDistance(Vector3 myPos, Vector3 targetPos) {
+    double findDistance(Vector3 myPos, Vector3 targetPos)
+    {
         double distance = Math.Sqrt(Math.Pow(targetPos.x - myPos.x, 2) + Math.Pow(targetPos.z - myPos.z, 2));
         return distance;
 

@@ -37,9 +37,6 @@ public class Warrior : MonoBehaviour
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench)
         {
-
-
-
             target = findEnemy();
             if (target != null)
             {
@@ -52,7 +49,34 @@ public class Warrior : MonoBehaviour
                     timer -= Time.deltaTime;
                     if (timer < 0)
                     {
-                        print(attack());
+
+                        if (target.GetComponent<Warrior_Enemy>() != null)
+                        {
+                            Warrior_Enemy instance = target.GetComponent<Warrior_Enemy>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<Assasin_Enemy>() != null)
+                        {
+                            Assasin_Enemy instance = target.GetComponent<Assasin_Enemy>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<FireBenderEnemy>() != null)
+                        {
+                            FireBenderEnemy instance = target.GetComponent<FireBenderEnemy>();
+                            instance.takeDamage(attack());
+                        }
+                        else if (target.GetComponent<WaterBender_Enemy>() != null)
+                        {
+                            WaterBender_Enemy instance = target.GetComponent<WaterBender_Enemy>();
+                            instance.takeDamage(attack());
+                        }
+
+
+
+
+
+
+
                     }
                 }
                 else
@@ -63,6 +87,16 @@ public class Warrior : MonoBehaviour
             }
         }
 
+    }
+
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 
