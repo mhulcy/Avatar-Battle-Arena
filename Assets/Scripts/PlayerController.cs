@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     public NavMeshAgent agent;
 
-    private bool playerBench = false;
+    public bool playerBench = false;
 
     private void Start()
     {
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if (isSelected)
         {
             if (Input.GetMouseButtonDown(1))
@@ -117,6 +117,7 @@ public class PlayerController : MonoBehaviour
         int sendY = 0;
         int count = 0;
         bool isBenched = false;
+        
 
 
         GameObject[] temp = GameObject.FindGameObjectsWithTag("Bench");

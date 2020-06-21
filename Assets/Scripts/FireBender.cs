@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class FireBender : MonoBehaviour
 {
+
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -25,6 +26,7 @@ public class FireBender : MonoBehaviour
     public GameObject elementPrefab;
 
     public NavMeshAgent agent;
+    PlayerController playerControls = new PlayerController();
 
 
     void Start()
@@ -36,35 +38,38 @@ public class FireBender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
-
-
-        target = findEnemy();
-        if (target != null)
+        playerControls = this.GetComponent<PlayerController>();
+        if (!playerControls.playerBench)
         {
-            targetCoords = target.transform.position;
-            anim.SetBool("IsWalking", true);
-            if (findDistance(this.transform.position, targetCoords) < range)
+
+
+
+            target = findEnemy();
+            if (target != null)
             {
-                anim.SetBool("IsWalking", false);
-                agent.isStopped = true;
-                timer -= Time.deltaTime;
-                if (timer < 0)
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
                 {
-                    print(attack());
-                    
-                       
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
+                    {
+                        print(attack());
+
+
                         //if (projectile.transform.position == target.transform.position)
-                            //Destroy(projectile);
-                    
+                        //Destroy(projectile);
+
+                    }
                 }
-            }
-            else
-            {
-                
-                agent.isStopped = false;
-                agent.SetDestination(targetCoords);
+                else
+                {
+
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
+                }
             }
         }
 
