@@ -9807,7 +9807,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1935557095}
+      objectReference: {fileID: 1935557096}
     - target: {fileID: 7128878733178503351, guid: 898380e1ddcafc24d8b877b904e71c36,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -31581,6 +31581,7 @@ GameObject:
   - component: {fileID: 1935557092}
   - component: {fileID: 1935557091}
   - component: {fileID: 1935557095}
+  - component: {fileID: 1935557096}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -31683,6 +31684,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684a8177b97b0ce4aa5634a1fe21d4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1935557096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935557090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e648acbfaf72b46a3ac5d99cd2d6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
 --- !u!1 &1940413860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1619558185565566, guid: 1d9cc67243350f643b8c562ed0503c49,

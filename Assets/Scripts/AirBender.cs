@@ -123,7 +123,7 @@ public class AirBender : MonoBehaviour
 
         anim.SetTrigger("PunchTrigger");
         air.Play();
-        return amount;
+        
 
 
 
@@ -136,8 +136,8 @@ public class AirBender : MonoBehaviour
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
+        return amount;
 
-        
     }
 
     GameObject findEnemy() {
