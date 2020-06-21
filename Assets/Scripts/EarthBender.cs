@@ -14,7 +14,7 @@ public class EarthBender : MonoBehaviour {
     int tolerance = 5;
     float timer = 2f;
 
-    PlayerController playerControls = new PlayerController();
+    PlayerController playerControls;
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
