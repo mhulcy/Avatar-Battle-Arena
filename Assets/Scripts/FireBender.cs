@@ -84,7 +84,7 @@ public class FireBender : MonoBehaviour
     {
         anim.SetTrigger("PunchTrigger");
 
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.1f , this.transform.position.z), Quaternion.identity) as GameObject;
+        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f , this.transform.position.z), Quaternion.identity) as GameObject;
         FireBall elementShot = projectile.GetComponent<FireBall>();
          elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;

@@ -70,6 +70,7 @@ public class WaterBender : MonoBehaviour {
 
 
     int attack() {
+        print("attacks");
         anim.SetTrigger("PunchTrigger");
 
         //Water water = GetComponent<Water>();
@@ -88,8 +89,8 @@ public class WaterBender : MonoBehaviour {
         //Destroy(projectile);
 
         int amount;
-        //print("attacks");
-        timer += 100;
+        print("attacks");
+        timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
         return amount;
