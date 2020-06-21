@@ -7,91 +7,91 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
 
-public class AirBender : MonoBehaviour
-{
+public class EarthBender : MonoBehaviour {
     int health = 60;
     const int range = 6;
     int damage = 30;
     int tolerance = 5;
-    float timer = 1f;
+    float timer = 2f;
+
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
-    public GameObject projectile;
-
 
     public GameObject elementPrefab;
-    //ParticleSystem air;
+    ParticleSystem earth;
 
     public NavMeshAgent agent;
-  //  PlayerController playerControls = new PlayerController();
 
-    void Start()
-    {
+
+    void Start() {
         anim = GetComponent<Animator>();
-       // air = elementPrefab.GetComponent<ParticleSystem>();
-
+        earth = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+
+
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench)
         {
-            //air.Play();
-            playerControls = this.GetComponent<PlayerController>();
-            if (!playerControls.playerBench)
+            target = findEnemy();
+            if (target != null)
             {
-
-
-
-                target = findEnemy();
-                if (target != null)
+                targetCoords = target.transform.position;
+                anim.SetBool("IsWalking", true);
+                if (findDistance(this.transform.position, targetCoords) < range)
                 {
-                    targetCoords = target.transform.position;
-                    anim.SetBool("IsWalking", true);
-                    if (findDistance(this.transform.position, targetCoords) < range)
+                    anim.SetBool("IsWalking", false);
+                    agent.isStopped = true;
+                    timer -= Time.deltaTime;
+                    if (timer < 0)
                     {
-                        anim.SetBool("IsWalking", false);
-                        agent.isStopped = true;
-                        timer -= Time.deltaTime;
-                        if (timer < 0)
-                        {
-                            print(attack());
+                        //Water.Stop();
+                        print(attack());
 
+                        // earth.Stop();
+                        //if (projectile.transform.position == target.transform.position)
+                        //Destroy(projectile);
 
-                            //if (projectile.transform.position == target.transform.position)
-                            //Destroy(projectile);
-
-                        }
                     }
-                    else
-                    {
+                }
+                else
+                {
 
-                        agent.isStopped = false;
-                        agent.SetDestination(targetCoords);
-                    }
+                    agent.isStopped = false;
+                    agent.SetDestination(targetCoords);
                 }
             }
         }
-    }
 
+
+
+    }
     int attack() {
+        print("attacks");
         anim.SetTrigger("PunchTrigger");
-       //air.Play();
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity) as GameObject;
-        Tornado elementShot = projectile.GetComponent<Tornado>();
-        elementShot.setTarget(target);
+
+        //Water water = GetComponent<Water>();
+
+        earth.Play();
+
+
+
+
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
+        //FireBall elementShot = projectile.GetComponent<FireBall>();
+        //elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
         //Destroy(projectile);
 
         int amount;
-        //print("attacks");
+        print("attacks");
         timer = 1f;
         int addedDmg = UnityEngine.Random.Range(-5, 6);
         amount = damage + addedDmg;
@@ -123,4 +123,6 @@ public class AirBender : MonoBehaviour
         return distance;
 
     }
+
+
 }

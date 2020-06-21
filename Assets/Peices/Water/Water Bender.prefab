@@ -3131,6 +3131,7 @@ GameObject:
   - component: {fileID: 2994420230456266648}
   - component: {fileID: 2078419222}
   - component: {fileID: 2078419224}
+  - component: {fileID: -2339731133027111471}
   m_Layer: 0
   m_Name: Water Bender
   m_TagString: Player_Piece
@@ -3284,6 +3285,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e211397837cbf454ea3196da44a7e381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460900945909919082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5103fa85787ec4dbdd3bb54a7659c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementPrefab: {fileID: 0}
+  agent: {fileID: 204323894}
 --- !u!1 &3460900945909923238
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,38 +6,39 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.AI;
-using System.Runtime.CompilerServices;
 
-public class Warrior_Enemy : MonoBehaviour
+public class EarthBender_Enemy : MonoBehaviour
 {
-    int health = 100;
-    const int range = 3;
-    int damage = 20;
+    int health = 60;
+    const int range = 6;
+    int damage = 30;
     int tolerance = 5;
-    float timer = 1f;
+    float timer = 2f;
 
+    PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
 
+    public GameObject elementPrefab;
+    ParticleSystem earth;
 
     public NavMeshAgent agent;
-    PlayerController playerControls = new PlayerController();
+
 
     void Start()
     {
         anim = GetComponent<Animator>();
-
+        earth = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
        
-
-
-
             target = findEnemy();
             if (target != null)
             {
@@ -50,16 +51,25 @@ public class Warrior_Enemy : MonoBehaviour
                     timer -= Time.deltaTime;
                     if (timer < 0)
                     {
+                        //Water.Stop();
                         print(attack());
+
+                        // earth.Stop();
+                        //if (projectile.transform.position == target.transform.position)
+                        //Destroy(projectile);
+
                     }
                 }
                 else
                 {
+
                     agent.isStopped = false;
                     agent.SetDestination(targetCoords);
                 }
             
         }
+
+
 
     }
 
@@ -71,12 +81,26 @@ public class Warrior_Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-
-
     int attack()
     {
+        print("attacks");
         anim.SetTrigger("PunchTrigger");
+
+        //Water water = GetComponent<Water>();
+
+        earth.Play();
+
+
+
+
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z), Quaternion.identity) as GameObject;
+        //FireBall elementShot = projectile.GetComponent<FireBall>();
+        //elementShot.setTarget(target);
+        //elementShot.transform.position = target.transform.position;
+
+        //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        //Destroy(projectile);
+
         int amount;
         print("attacks");
         timer = 1f;
