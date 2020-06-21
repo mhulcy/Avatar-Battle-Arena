@@ -7,3 +7,12 @@ Turn Based Strategy Game
 
 Based off Dota Auto Chess and TFT (Team Fight Tactics)
 
+Mike Hulcy
+
+Jeremy Basso
+
+Garrett Freddo
+
+Benn Oishi
+
+Preston Reed
