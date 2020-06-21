@@ -561,6 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e02c42d26e46641ab20a77587044e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatState: 0
   projectile: {fileID: 0}
   elementPrefab: {fileID: 100000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
   agent: {fileID: 589171447}
@@ -3775,6 +3776,10 @@ PrefabInstance:
     - target: {fileID: 19800000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
       propertyPath: ShapeModule.type
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}

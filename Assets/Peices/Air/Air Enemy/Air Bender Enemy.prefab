@@ -560,6 +560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6250dbac0dcd174ca82cbf788bda6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  State_Machine: {fileID: 2234002587486408074, guid: f6c6635bd6f26784ab65c8e806791315,
+    type: 3}
+  combatState: 0
   projectile: {fileID: 0}
   elementPrefab: {fileID: 235959350}
   agent: {fileID: 589171447}

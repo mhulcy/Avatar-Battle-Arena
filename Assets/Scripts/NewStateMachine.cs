@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Specialized;
+using System.Security.Cryptography;
 
 public enum currentState
 {
@@ -14,7 +16,7 @@ public enum currentState
 public class NewStateMachine : MonoBehaviour
 {
     private int prevScene;
-
+    /*
     public GameObject enemyAirBender;
     public GameObject enemyAirAssasin;
     public GameObject enemyAirWarrior;
@@ -41,6 +43,10 @@ public class NewStateMachine : MonoBehaviour
     public GameObject FireAssasin;
     public GameObject FireBender;
 
+    Airbender_Enemy airEnemy;
+    AirBender airPlayer;
+    */
+
     private GameObject[] enemyArray;
     private GameObject[] playerArray;
     //private GameObject[] playersOnBoard;
@@ -52,6 +58,7 @@ public class NewStateMachine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         print("in start");
         state = currentState.BUY;
        // SceneManager.LoadScene(0);
@@ -63,9 +70,10 @@ public class NewStateMachine : MonoBehaviour
     
     void Update()
     {
-        //print("update");
+        print(state);
         if (state == currentState.COMBAT)
         {
+           // print("Eric");
             turnOnCombat();  
             isCombatOver();
         }
@@ -77,37 +85,116 @@ public class NewStateMachine : MonoBehaviour
     }
     
 
-    void turnOnCombat()
+    public void turnOnCombat()
     {
-        print("turning on combat");
-        Airbender_Enemy airEnemy = enemyAirBender.GetComponent<Airbender_Enemy>();
-        AirBender airPlayer = AirBender.GetComponent<AirBender>();
-        Assasin airPlayerAssasin = AirAssasin.GetComponent<Assasin>();
-        Assasin_Enemy airEnemyAssasin = enemyAirAssasin.GetComponent<Assasin_Enemy>();
-        Warrior airWarrior = AirWarrior.GetComponent<Warrior>();
-        Warrior_Enemy airWarriorEnemy = enemyAirWarrior.GetComponent<Warrior_Enemy>();
-        Assasin earthPlayerAssasin = EarthAssasin.GetComponent<Assasin>();
-        Assasin_Enemy earthEnemyAssasin = enemyEarthAssasin.GetComponent<Assasin_Enemy>();
-        Warrior earthPlayerWarrior = EarthWarrior.GetComponent<Warrior>();
-        Warrior_Enemy earthEnemyWarrior = enemyEarthWarrior.GetComponent<Warrior_Enemy>();
-        EarthBender_Enemy earthEnemy = enemyEarthBender.GetComponent<EarthBender_Enemy>();
-        EarthBender earthPlayer = EarthBender.GetComponent<EarthBender>();
-        Assasin firePlayerAssasin = FireAssasin.GetComponent<Assasin>();
-        Assasin_Enemy fireEnemyAssasin = enemyFireAssasin.GetComponent<Assasin_Enemy>();
-        Warrior firePlayerWarrior = FireWarrior.GetComponent<Warrior>();
-        Warrior_Enemy fireEnemyWarrior = enemyFireWarrior.GetComponent<Warrior_Enemy>();
-        FireBenderEnemy fireEnemy = enemyFireBender.GetComponent<FireBenderEnemy>();
-        FireBender firePlayer = FireBender.GetComponent<FireBender>();
-        Assasin waterPlayerAssasin = WaterAssasin.GetComponent<Assasin>();
-        Assasin_Enemy waterEnemyAssasin = enemyWaterAssasin.GetComponent<Assasin_Enemy>();
-        Warrior waterPlayerWarrior = WaterWarrior.GetComponent<Warrior>();
-        Warrior_Enemy waterEnemyWarrior = enemyWaterWarrior.GetComponent<Warrior_Enemy>();
-        WaterBender waterPlayer = WaterBender.GetComponent<WaterBender>();
-        WaterBender_Enemy waterEnemy = enemyWaterBender.GetComponent<WaterBender_Enemy>();
+
+        enemyArray = GameObject.FindGameObjectsWithTag("Enemy_Piece");
+        playerArray = GameObject.FindGameObjectsWithTag("Player_Piece");
+
+        for (int i = 0; i < enemyArray.Length; ++i)
+        {
+            if (enemyArray[i].GetComponent<Warrior_Enemy>() != null)
+            {
+                Warrior_Enemy instance = enemyArray[i].GetComponent<Warrior_Enemy>();
+                instance.isCombat();
+            }
+            else if (enemyArray[i].GetComponent<Assasin_Enemy>() != null)
+            {
+                Assasin_Enemy instance = enemyArray[i].GetComponent<Assasin_Enemy>();
+                instance.isCombat();
+            }
+            else if (enemyArray[i].GetComponent<FireBenderEnemy>() != null)
+            {
+                FireBenderEnemy instance = enemyArray[i].GetComponent<FireBenderEnemy>();
+                instance.isCombat();
+            }
+            else if (enemyArray[i].GetComponent<WaterBender_Enemy>() != null)
+            {
+                WaterBender_Enemy instance = enemyArray[i].GetComponent<WaterBender_Enemy>();
+                instance.isCombat();
+            }
+            else if (enemyArray[i].GetComponent<EarthBender_Enemy>() != null)
+            {
+                EarthBender_Enemy instance = enemyArray[i].GetComponent<EarthBender_Enemy>();
+                instance.isCombat();
+            }
+            else if (enemyArray[i].GetComponent<Airbender_Enemy>() != null)
+            {
+                Airbender_Enemy instance = enemyArray[i].GetComponent<Airbender_Enemy>();
+                instance.isCombat();
+            }
+        }
+
+        for (int i = 0; i < playerArray.Length; ++i)
+        {
+            if (playerArray[i].GetComponent<AirBender>() != null)
+            {
+                AirBender instance = playerArray[i].GetComponent<AirBender>();
+                instance.isCombat();
+            }
+            else if (playerArray[i].GetComponent<Assasin>() != null)
+            {
+                Assasin instance = playerArray[i].GetComponent<Assasin>();
+                instance.isCombat();
+            }
+            else if (playerArray[i].GetComponent<EarthBender>() != null)
+            {
+                EarthBender instance = playerArray[i].GetComponent<EarthBender>();
+                instance.isCombat();
+            }
+            else if (playerArray[i].GetComponent<FireBender>() != null)
+            {
+                FireBender instance = playerArray[i].GetComponent<FireBender>();
+                instance.isCombat();
+            }
+            else if (playerArray[i].GetComponent<Warrior>() != null)
+            {
+                Warrior instance = playerArray[i].GetComponent<Warrior>();
+                instance.isCombat();
+            }
+            else if (playerArray[i].GetComponent<WaterBender>() != null)
+            {
+                WaterBender instance = playerArray[i].GetComponent<WaterBender>();
+                instance.isCombat();
+            }
+        }
 
 
-        airEnemy.isCombat();
-        airPlayer.isCombat();
+
+        // print("turning on combat");
+        /*
+         Airbender_Enemy airEnemy = enemyAirBender.GetComponent("Airbender_Enemy") as Airbender_Enemy;
+         AirBender airPlayer = AirBender.GetComponent<AirBender>();
+         Assasin airPlayerAssasin = AirAssasin.GetComponent<Assasin>();
+         Assasin_Enemy airEnemyAssasin = enemyAirAssasin.GetComponent<Assasin_Enemy>();
+         Warrior airWarrior = AirWarrior.GetComponent<Warrior>();
+         Warrior_Enemy airWarriorEnemy = enemyAirWarrior.GetComponent<Warrior_Enemy>();
+         Assasin earthPlayerAssasin = EarthAssasin.GetComponent<Assasin>();
+         Assasin_Enemy earthEnemyAssasin = enemyEarthAssasin.GetComponent<Assasin_Enemy>();
+         Warrior earthPlayerWarrior = EarthWarrior.GetComponent<Warrior>();
+         Warrior_Enemy earthEnemyWarrior = enemyEarthWarrior.GetComponent<Warrior_Enemy>();
+         EarthBender_Enemy earthEnemy = enemyEarthBender.GetComponent<EarthBender_Enemy>();
+         EarthBender earthPlayer = EarthBender.GetComponent<EarthBender>();
+         Assasin firePlayerAssasin = FireAssasin.GetComponent<Assasin>();
+         Assasin_Enemy fireEnemyAssasin = enemyFireAssasin.GetComponent<Assasin_Enemy>();
+         Warrior firePlayerWarrior = FireWarrior.GetComponent<Warrior>();
+         Warrior_Enemy fireEnemyWarrior = enemyFireWarrior.GetComponent<Warrior_Enemy>();
+         FireBenderEnemy fireEnemy = enemyFireBender.GetComponent<FireBenderEnemy>();
+         FireBender firePlayer = FireBender.GetComponent<FireBender>();
+         Assasin waterPlayerAssasin = WaterAssasin.GetComponent<Assasin>();
+         Assasin_Enemy waterEnemyAssasin = enemyWaterAssasin.GetComponent<Assasin_Enemy>();
+         Warrior waterPlayerWarrior = WaterWarrior.GetComponent<Warrior>();
+         Warrior_Enemy waterEnemyWarrior = enemyWaterWarrior.GetComponent<Warrior_Enemy>();
+         WaterBender waterPlayer = WaterBender.GetComponent<WaterBender>();
+         WaterBender_Enemy waterEnemy = enemyWaterBender.GetComponent<WaterBender_Enemy>();
+        
+
+        //print("hump me");
+        airEnemy.combatState = true;
+        airPlayer.combatState = true;
+        */
+        /*
+        
         airPlayerAssasin.isCombat();
         airEnemyAssasin.isCombat();
         airWarrior.isCombat();
@@ -126,15 +213,16 @@ public class NewStateMachine : MonoBehaviour
         fireEnemyWarrior.isCombat();
         waterPlayer.isCombat();
         waterPlayerAssasin.isCombat();
-        waterPlayerWarrior.isCombat();
+       // waterPlayerWarrior.isCombat();
         waterEnemy.isCombat();
         waterEnemyAssasin.isCombat();
         waterEnemyWarrior.isCombat();
-
+        */
     }
 
-    void turnOffCombat()
+    public void turnOffCombat()
     {
+        /*
         print("turning on combat");
         Airbender_Enemy airEnemy = enemyAirBender.GetComponent<Airbender_Enemy>();
         AirBender airPlayer = AirBender.GetComponent<AirBender>();
@@ -162,7 +250,7 @@ public class NewStateMachine : MonoBehaviour
         WaterBender_Enemy waterEnemy = enemyWaterBender.GetComponent<WaterBender_Enemy>();
 
 
-        airEnemy.notCombat();
+       // airEnemy.notCombat();
         airPlayer.notCombat();
         airPlayerAssasin.notCombat();
         airEnemyAssasin.notCombat();
@@ -186,6 +274,7 @@ public class NewStateMachine : MonoBehaviour
         waterEnemy.notCombat();
         waterEnemyAssasin.notCombat();
         waterEnemyWarrior.notCombat();
+        */
     }
 
     void beginCombat()
