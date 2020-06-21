@@ -22,10 +22,17 @@ public class MainMenuScript : MonoBehaviour
 
     public void GoToContols() {
         prevScene = SceneManager.GetActiveScene().buildIndex;
+        print(prevScene);
         SceneManager.LoadScene(1);
     }
 
     public void GoBack() {
-        SceneManager.LoadScene(prevScene);
+        print(prevScene);
+        if (prevScene == 0) {
+            SceneManager.LoadScene("Board");
+        }
+        else
+            SceneManager.LoadScene("Title");
+        
     }
 }
