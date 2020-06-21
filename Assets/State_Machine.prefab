@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2234002587486408074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2234002587486408072}
+  - component: {fileID: 2234002587486408075}
+  m_Layer: 0
+  m_Name: State_Machine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2234002587486408072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234002587486408074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6058574, y: -3.7912967, z: 7.053032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2234002587486408075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234002587486408074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e648acbfaf72b46a3ac5d99cd2d6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAirBender: {fileID: 5195070443504545876, guid: c37491a1ec8425840b8073ae80f7c842,
+    type: 3}
+  enemyAirAssasin: {fileID: 641505195311475700, guid: c65630de8f995564d9081540ae74f0a2,
+    type: 3}
+  enemyAirWarrior: {fileID: 8128577162668582585, guid: 19cc61c72ed604742b184941b98ec148,
+    type: 3}
+  enemyEarthWarrior: {fileID: 4137001748853122460, guid: c28555414484ab942b169fc8ea7e170b,
+    type: 3}
+  enemyEarthBender: {fileID: 1366204537301040084, guid: 64cd780505c801b48b922b912db3c8c9,
+    type: 3}
+  enemyEarthAssasin: {fileID: 2767130447686587120, guid: 8d45eea3d4a2eba468b575eafb19d795,
+    type: 3}
+  enemyWaterWarrior: {fileID: 3520800829512392539, guid: f67957171d2376247be6e4acc89410cb,
+    type: 3}
+  enemyWaterBender: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+    type: 3}
+  enemyWaterAssasin: {fileID: 3389150756822332364, guid: d9c41a4c0e1502141a522a3ba8252976,
+    type: 3}
+  enemyFireWarrior: {fileID: 2105934844593678982, guid: 8f7d5db21d326404baf313df8d9d04d0,
+    type: 3}
+  enemyFireAssasin: {fileID: 6483312239768880349, guid: cc628ab1c03cea74fb4c2595ac7ae366,
+    type: 3}
+  enemyFireBender: {fileID: 7886486155345767721, guid: 22180889599750f48939e7da76a78063,
+    type: 3}
+  AirBender: {fileID: 5195070443504545876, guid: 34aa66b2bd666da458e4b4a0088ae482,
+    type: 3}
+  AirAssasin: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+    type: 3}
+  AirWarrior: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+    type: 3}
+  EarthWarrior: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+    type: 3}
+  EarthBender: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+    type: 3}
+  EarthAssasin: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+    type: 3}
+  WaterWarrior: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+    type: 3}
+  WaterBender: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+    type: 3}
+  WaterAssasin: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+    type: 3}
+  FireWarrior: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+    type: 3}
+  FireAssasin: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+    type: 3}
+  FireBender: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+    type: 3}
+  state: 0

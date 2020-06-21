@@ -9,7 +9,10 @@ using UnityEngine.AI;
 
 public class FireBender : MonoBehaviour
 {
+   
+    
 
+bool combatState = false;
     int health = 60;
     const int range = 6;
     int damage = 30;
@@ -39,11 +42,7 @@ public class FireBender : MonoBehaviour
     void Update()
     {
         playerControls = this.GetComponent<PlayerController>();
-        if (!playerControls.playerBench)
-        {
-
-
-
+        if (!playerControls.playerBench && combatState) {
             target = findEnemy();
             if (target != null)
             {
@@ -161,5 +160,13 @@ public class FireBender : MonoBehaviour
 
     }
 
+    public void isCombat() {
+        //print("combat ");
+        combatState = true;
+    }
+
+    public void notCombat() {
+        combatState = false;
+    }
 
 }
