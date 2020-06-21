@@ -2122,16 +2122,14 @@ GameObject:
   - component: {fileID: 4137001748852805368}
   - component: {fileID: 4137001748845820566}
   - component: {fileID: -3159890496308041256}
-  - component: {fileID: 623853583}
   - component: {fileID: 623853584}
   - component: {fileID: 623853587}
   - component: {fileID: 623853586}
   - component: {fileID: 1367202228}
-  - component: {fileID: 1367202226}
-  - component: {fileID: 1367202227}
+  - component: {fileID: 8510458145025375104}
   m_Layer: 0
-  m_Name: Earth Warrior
-  m_TagString: Player_Piece
+  m_Name: Earth Warrior Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2190,20 +2188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EarthWarrior: {fileID: 4137001748853122460}
---- !u!114 &623853583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4137001748853122460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 623853584}
-  playerBench: 0
 --- !u!195 &623853584
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2268,7 +2252,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1367202226
+--- !u!114 &8510458145025375104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2277,24 +2261,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4137001748853122460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3937c57858d08a54fb1e9cb57fb50c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 623853584}
---- !u!114 &1367202227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4137001748853122460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6865024b0e147dd4086c0c5f5e4d2d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 623853584}
-  playerBench: 0
 --- !u!1 &4137001748853122674
 GameObject:
   m_ObjectHideFlags: 0

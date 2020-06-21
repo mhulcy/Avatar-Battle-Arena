@@ -3511,8 +3511,8 @@ GameObject:
   - component: {fileID: 2229239496960232782}
   - component: {fileID: -6649209732307687527}
   m_Layer: 0
-  m_Name: Earth Bender
-  m_TagString: Player_Piece
+  m_Name: Earth Bender Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

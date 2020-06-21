@@ -9,6 +9,8 @@ TagManager:
   - Bench
   - Enemy_Board
   - Enemy_Bench
+  - FxTemporaire
+  - Player_Piece
   layers:
   - Default
   - TransparentFX

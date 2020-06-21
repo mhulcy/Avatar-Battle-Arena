@@ -2266,8 +2266,8 @@ GameObject:
   - component: {fileID: -9120718735554408464}
   - component: {fileID: 5709722616449256144}
   m_Layer: 0
-  m_Name: Fire Bender
-  m_TagString: Player_Piece
+  m_Name: Fire Bender Enemy
+  m_TagString: Enemy_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2302,7 +2302,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7886486155345767721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 2ba66718d3169ae42a05d8facf302228, type: 3}
   m_Controller: {fileID: 9100000, guid: 6c20c02fbae58784688d4fb840e4d838, type: 2}
   m_CullingMode: 1
@@ -2378,7 +2378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 2082634091}
   playerBench: 0
---- !u!114 &
+--- !u!114 &-9120718735554408464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  elementPrefab: {fileID: 100000, guid: 756d99540142b5e4a8d174e18a6310d9, type: 3}
+  elementPrefab: {fileID: 0}
   agent: {fileID: 2082634091}
 --- !u!1 &7886486155345768649
 GameObject:
