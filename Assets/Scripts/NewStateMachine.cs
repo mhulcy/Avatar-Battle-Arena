@@ -51,7 +51,7 @@ public class NewStateMachine : MonoBehaviour
 
         if(state == currentState.BUY)
         {
-            print("BENN");
+
         }
 
 
