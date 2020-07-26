@@ -20,6 +20,7 @@ public class NewStateMachine : MonoBehaviour
 
     private GameObject[] enemyArray;
     private GameObject[] playerArray;
+    private Vector3[] playerPositions;
     //private GameObject[] playersOnBoard;
     private int enemyHP = 100;
     private int playerHP = 100;
@@ -50,7 +51,7 @@ public class NewStateMachine : MonoBehaviour
 
         if(state == currentState.BUY)
         {
-
+            playerRecordPositions();
         }
 
 
@@ -60,6 +61,22 @@ public class NewStateMachine : MonoBehaviour
         }
     }
     
+    Vector3[]  playerRecordPositions()
+    {
+        playerArray = GameObject.FindGameObjectsWithTag("Player_Piece");
+        for(int i = 0; i < playerArray.Length;++i)
+        {
+            PlayerController instance = playerArray[i].GetComponent<PlayerController>();
+            if (!instance.playerBench)
+            {
+                playerPositions[i] = playerArray[i].transform.position;
+                print(playerPositions[i]);
+            }
+        }
+        return playerPositions;
+    }
+
+
 
     public void turnOnCombat()
     {
