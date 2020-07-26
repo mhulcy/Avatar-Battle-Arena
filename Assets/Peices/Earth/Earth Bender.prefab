@@ -1384,6 +1384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dfc764be55412428dffb74e6023bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 0
   elementPrefab: {fileID: 6001232595579979250}
   agent: {fileID: 4343095926310294116}
 --- !u!114 &375072036

@@ -10,6 +10,10 @@ public class AirWarriorSpawn : MonoBehaviour
 
     public void spawnAirWarrior()
     {
-        GameObject Air_Warrior = Instantiate(AirWarrior, new Vector3(0, 0, 0), Quaternion.identity);
+        if (Camera.main.GetComponent<PlayerMoney>().getPlayerMoney() >= 1)
+        {
+            GameObject Air_Warrior = Instantiate(AirWarrior, new Vector3(0, 0, 0), Quaternion.identity);
+            Camera.main.GetComponent<PlayerMoney>().subtractMoney(1);
+        }
     }
 }

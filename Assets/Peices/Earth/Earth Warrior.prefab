@@ -2280,6 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 1
   agent: {fileID: 623853584}
 --- !u!114 &1367202227
 MonoBehaviour:

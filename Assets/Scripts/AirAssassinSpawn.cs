@@ -10,6 +10,10 @@ public class AirAssassinSpawn : MonoBehaviour
 
     public void spawnAirAssassin()
     {
-        GameObject Air_Assassin = Instantiate(AirAssassin, new Vector3(0, 0, 0), Quaternion.identity);
+        if (Camera.main.GetComponent<PlayerMoney>().getPlayerMoney() >= 2)
+        {
+            GameObject Air_Assassin = Instantiate(AirAssassin, new Vector3(0, 0, 0), Quaternion.identity);
+            Camera.main.GetComponent<PlayerMoney>().subtractMoney(2);
+        }
     }
 }

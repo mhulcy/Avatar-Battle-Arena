@@ -17,6 +17,7 @@ public class AirBender : MonoBehaviour
     int damage = 30;
     int tolerance = 5;
     float timer = 1f;
+    public int cost = 3;
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
@@ -38,7 +39,11 @@ public class AirBender : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
         healthBar = getHealth.GetComponent<HealthBar>();
+=======
+        combatState = false;
+>>>>>>> a0e8bbe00c217f85a86f6cc8ec7235db3eaa9959
         anim = GetComponent<Animator>();
         healthBar.setMaxHealth(health);
         healthBar.setHealth(health);
@@ -52,6 +57,7 @@ public class AirBender : MonoBehaviour
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench && combatState)
         {
+            
             target = findEnemy();
             if (target != null)
             {

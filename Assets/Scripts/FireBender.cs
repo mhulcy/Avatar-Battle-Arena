@@ -19,16 +19,21 @@ bool combatState = false;
     int tolerance = 5;
     float timer = 1f;
     float fireBallTimer = 1f;
+    public int cost = 3;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
     Animator anim;
     GameObject target;
     public GameObject projectile;
+<<<<<<< HEAD
 
     public HealthBar healthBar;
 
     public GameObject getHealth;
+=======
+    ParticleSystem fire;
+>>>>>>> a0e8bbe00c217f85a86f6cc8ec7235db3eaa9959
 
     public GameObject elementPrefab;
 
@@ -40,8 +45,12 @@ bool combatState = false;
     {
         healthBar = getHealth.GetComponent<HealthBar>();
         anim = GetComponent<Animator>();
+<<<<<<< HEAD
         healthBar.setMaxHealth(health);
         healthBar.setHealth(health);
+=======
+        fire = elementPrefab.GetComponent<ParticleSystem>();
+>>>>>>> a0e8bbe00c217f85a86f6cc8ec7235db3eaa9959
     }
 
     // Update is called once per frame
@@ -121,13 +130,15 @@ bool combatState = false;
     int attack()
     {
         anim.SetTrigger("PunchTrigger");
+        fire.Play();
 
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f , this.transform.position.z), Quaternion.identity) as GameObject;
-        FireBall elementShot = projectile.GetComponent<FireBall>();
-         elementShot.setTarget(target);
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f , this.transform.position.z), Quaternion.identity) as GameObject;
+        //FireBall elementShot = projectile.GetComponent<FireBall>();
+         //elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        
         
         //Destroy(projectile);
         

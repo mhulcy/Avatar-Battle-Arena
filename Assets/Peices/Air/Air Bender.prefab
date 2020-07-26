@@ -1884,6 +1884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatState: 0
+  cost: 3
   elementPrefab: {fileID: 9001563675964816839}
   agent: {fileID: 6004407841230754362}
 --- !u!114 &907559421204111873
@@ -1912,6 +1913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 1
   agent: {fileID: 0}
 --- !u!1 &1966780103761800743
 GameObject:
