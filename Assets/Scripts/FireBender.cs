@@ -19,6 +19,7 @@ bool combatState = false;
     int tolerance = 5;
     float timer = 1f;
     float fireBallTimer = 1f;
+    public int cost = 3;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 

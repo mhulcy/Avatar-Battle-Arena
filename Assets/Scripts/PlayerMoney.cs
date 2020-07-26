@@ -37,4 +37,9 @@ public class PlayerMoney : MonoBehaviour
             playerMoney -= moneyToSubtract;
         }
     }
+
+    public int getPlayerMoney()
+    {
+        return playerMoney;
+    }
 }

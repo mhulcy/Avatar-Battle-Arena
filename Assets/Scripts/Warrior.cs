@@ -16,6 +16,7 @@ public class Warrior : MonoBehaviour
     int damage = 20;
     int tolerance = 5;
     float timer = 1f;
+    public int cost = 1;
 
     Vector3 targetCoords = new Vector3 (0,0,0);
 

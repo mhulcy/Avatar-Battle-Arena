@@ -16,6 +16,7 @@ public class Assasin : MonoBehaviour
     int damage = 40;
     int tolerance = 20;
     float timer = 1f;
+    public int cost = 2;
 
     bool usedMove = false;
 

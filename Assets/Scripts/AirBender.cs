@@ -17,6 +17,7 @@ public class AirBender : MonoBehaviour
     int damage = 30;
     int tolerance = 5;
     float timer = 1f;
+    public int cost = 3;
     PlayerController playerControls = new PlayerController();
     Vector3 targetCoords = new Vector3(0, 0, 0);
 

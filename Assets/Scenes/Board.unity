@@ -32635,7 +32635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoney: 0
-  moneyText: {fileID: 0}
+  moneyText: {fileID: 995280913}
 --- !u!45 &1928651909
 Skybox:
   m_ObjectHideFlags: 0

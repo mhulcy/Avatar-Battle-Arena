@@ -15,6 +15,7 @@ public class EarthBender : MonoBehaviour {
     int damage = 30;
     int tolerance = 5;
     float timer = 2f;
+    public int cost = 3;
 
     PlayerController playerControls;
     Vector3 targetCoords = new Vector3(0, 0, 0);
