@@ -173,59 +173,7 @@ public class AirBender : MonoBehaviour
 
     }
     public void isCombat() {
-        target = findEnemy();
-        if (target != null)
-        {
-            targetCoords = target.transform.position;
-            anim.SetBool("IsWalking", true);
-            if (findDistance(this.transform.position, targetCoords) < range)
-            {
-                anim.SetBool("IsWalking", false);
-                agent.isStopped = true;
-                timer -= Time.deltaTime;
-                if (timer < 0)
-                {
-                    if (target.GetComponent<Warrior_Enemy>() != null)
-                    {
-                        Warrior_Enemy instance = target.GetComponent<Warrior_Enemy>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<Assasin_Enemy>() != null)
-                    {
-                        Assasin_Enemy instance = target.GetComponent<Assasin_Enemy>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<FireBenderEnemy>() != null)
-                    {
-                        FireBenderEnemy instance = target.GetComponent<FireBenderEnemy>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<WaterBender_Enemy>() != null)
-                    {
-                        WaterBender_Enemy instance = target.GetComponent<WaterBender_Enemy>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<EarthBender_Enemy>() != null)
-                    {
-                        EarthBender_Enemy instance = target.GetComponent<EarthBender_Enemy>();
-                        instance.takeDamage(attack());
-                    }
-                    else if (target.GetComponent<Airbender_Enemy>() != null)
-                    {
-                        Airbender_Enemy instance = target.GetComponent<Airbender_Enemy>();
-                        instance.takeDamage(attack());
-                    }
-
-                }
-            }
-            else
-            {
-
-                agent.isStopped = false;
-                agent.SetDestination(targetCoords);
-            }
-
-        }
+        combatState = true;
     }
 
     public void notCombat() {
