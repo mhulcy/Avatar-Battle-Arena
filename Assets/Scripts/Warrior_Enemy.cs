@@ -23,13 +23,19 @@ bool combatState = false;
     Animator anim;
     GameObject target;
 
+    public HealthBar healthBar;
+
+    public GameObject getHealth;
 
     public NavMeshAgent agent;
     PlayerController playerControls = new PlayerController();
 
     void Start()
     {
+        healthBar = getHealth.GetComponent<HealthBar>();
         anim = GetComponent<Animator>();
+        healthBar.setMaxHealth(health);
+        healthBar.setHealth(health);
 
     }
 
@@ -88,6 +94,7 @@ bool combatState = false;
     public void takeDamage(int amount)
     {
         health -= amount;
+        healthBar.setHealth(health);
         if (health <= 0)
         {
             Destroy(this.gameObject);

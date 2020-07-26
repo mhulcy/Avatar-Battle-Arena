@@ -22,13 +22,18 @@ public class Warrior : MonoBehaviour
     Animator anim;
     GameObject target;
 
+    public HealthBar healthBar;
 
     public NavMeshAgent agent;
     PlayerController playerControls = new PlayerController();
 
     void Start()
     {
+        healthBar = GetComponent<HealthBar>();
         anim = GetComponent<Animator>();
+        healthBar.setMaxHealth(health);
+        healthBar.setHealth(health);
+
 
     }
 
@@ -104,6 +109,7 @@ public class Warrior : MonoBehaviour
     public void takeDamage(int amount)
     {
         health -= amount;
+        healthBar.setHealth(health);
         if(health <= 0)
         {
             Destroy(this.gameObject);

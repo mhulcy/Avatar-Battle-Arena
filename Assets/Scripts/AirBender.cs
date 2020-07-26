@@ -26,6 +26,9 @@ public class AirBender : MonoBehaviour
     GameObject target;
     //public GameObject projectile;
 
+    public HealthBar healthBar;
+
+    public GameObject getHealth;
 
     public GameObject elementPrefab;
     ParticleSystem air;
@@ -35,10 +38,10 @@ public class AirBender : MonoBehaviour
 
     void Start()
     {
-        //combatState = false;
+        healthBar = getHealth.GetComponent<HealthBar>();
         anim = GetComponent<Animator>();
-        air = elementPrefab.GetComponent<ParticleSystem>();
-
+        healthBar.setMaxHealth(health);
+        healthBar.setHealth(health);
     }
 
     // Update is called once per frame
@@ -113,11 +116,13 @@ public class AirBender : MonoBehaviour
     public void takeDamage(int amount)
     {
         health -= amount;
+        healthBar.setHealth(health);
         if (health <= 0)
         {
             Destroy(this.gameObject);
         }
     }
+    
     int attack() {
         int amount;
         //print("attacks");

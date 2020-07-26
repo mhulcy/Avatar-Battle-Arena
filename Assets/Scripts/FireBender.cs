@@ -26,6 +26,9 @@ bool combatState = false;
     GameObject target;
     public GameObject projectile;
 
+    public HealthBar healthBar;
+
+    public GameObject getHealth;
 
     public GameObject elementPrefab;
 
@@ -35,8 +38,10 @@ bool combatState = false;
 
     void Start()
     {
+        healthBar = getHealth.GetComponent<HealthBar>();
         anim = GetComponent<Animator>();
-
+        healthBar.setMaxHealth(health);
+        healthBar.setHealth(health);
     }
 
     // Update is called once per frame
@@ -107,6 +112,7 @@ bool combatState = false;
     public void takeDamage(int amount)
     {
         health -= amount;
+        healthBar.setHealth(health);
         if (health <= 0)
         {
             Destroy(this.gameObject);
