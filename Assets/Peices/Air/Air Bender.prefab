@@ -1758,7 +1758,6 @@ GameObject:
   - component: {fileID: 6004407841431029302}
   - component: {fileID: 907559421204111873}
   - component: {fileID: 2911654249774623079}
-  - component: {fileID: 818791414102174245}
   m_Layer: 0
   m_Name: Air Bender
   m_TagString: Player_Piece
@@ -1885,6 +1884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatState: 0
+  cost: 3
   elementPrefab: {fileID: 9001563675964816839}
   agent: {fileID: 6004407841230754362}
 --- !u!114 &907559421204111873
@@ -1913,80 +1913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 1
   agent: {fileID: 0}
---- !u!114 &818791414102174245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966780103761799321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 096f51875f3ee794098fd2a80e9fddef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons: {fileID: 0}
-  FireWarriorOne: {fileID: 0}
-  FireWarriorTwo: {fileID: 0}
-  FireWarriorThree: {fileID: 0}
-  FireWarriorFour: {fileID: 0}
-  FireWarriorFive: {fileID: 0}
-  FireAssassinOne: {fileID: 0}
-  FireAssassinTwo: {fileID: 0}
-  FireAssassinThree: {fileID: 0}
-  FireAssassinFour: {fileID: 0}
-  FireAssassinFive: {fileID: 0}
-  FireBenderOne: {fileID: 0}
-  FireBenderTwo: {fileID: 0}
-  FireBenderThree: {fileID: 0}
-  FireBenderFour: {fileID: 0}
-  FireBenderFive: {fileID: 0}
-  WaterWarriorOne: {fileID: 0}
-  WaterWarriorTwo: {fileID: 0}
-  WaterWarriorThree: {fileID: 0}
-  WaterWarriorFour: {fileID: 0}
-  WaterWarriorFive: {fileID: 0}
-  WaterAssassinOne: {fileID: 0}
-  WaterAssassinTwo: {fileID: 0}
-  WaterAssassinThree: {fileID: 0}
-  WaterAssassinFour: {fileID: 0}
-  WaterAssassinFive: {fileID: 0}
-  WaterBenderOne: {fileID: 0}
-  WaterBenderTwo: {fileID: 0}
-  WaterBenderThree: {fileID: 0}
-  WaterBenderFour: {fileID: 0}
-  WaterBenderFive: {fileID: 0}
-  EarthWarriorOne: {fileID: 0}
-  EarthWarriorTwo: {fileID: 0}
-  EarthWarriorThree: {fileID: 0}
-  EarthWarriorFour: {fileID: 0}
-  EarthWarriorFive: {fileID: 0}
-  EarthAssassinOne: {fileID: 0}
-  EarthAssassinTwo: {fileID: 0}
-  EarthAssassinThree: {fileID: 0}
-  EarthAssassinFour: {fileID: 0}
-  EarthAssassinFive: {fileID: 0}
-  EarthBenderOne: {fileID: 0}
-  EarthBenderTwo: {fileID: 0}
-  EarthBenderThree: {fileID: 0}
-  EarthBenderFour: {fileID: 0}
-  EarthBenderFive: {fileID: 0}
-  AirWarriorOne: {fileID: 0}
-  AirWarriorTwo: {fileID: 0}
-  AirWarriorThree: {fileID: 0}
-  AirWarriorFour: {fileID: 0}
-  AirWarriorFive: {fileID: 0}
-  AirAssassinOne: {fileID: 0}
-  AirAssassinTwo: {fileID: 0}
-  AirAssassinThree: {fileID: 0}
-  AirAssassinFour: {fileID: 0}
-  AirAssassinFive: {fileID: 0}
-  AirBenderOne: {fileID: 1966780103761799321}
-  AirBenderTwo: {fileID: 1966780103761799321}
-  AirBenderThree: {fileID: 1966780103761799321}
-  AirBenderFour: {fileID: 1966780103761799321}
-  AirBenderFive: {fileID: 1966780103761799321}
 --- !u!1 &1966780103761800743
 GameObject:
   m_ObjectHideFlags: 0
