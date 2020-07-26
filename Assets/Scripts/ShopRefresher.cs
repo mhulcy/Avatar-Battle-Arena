@@ -27,11 +27,11 @@ public class ShopRefresher   : MonoBehaviour
          FireBenderThree.SetActive(false);
          FireBenderFour.SetActive(false);
          FireBenderFive.SetActive(false);
-         WaterWarriorOne.SetActive(true);
-         WaterWarriorTwo.SetActive(true);
-         WaterWarriorThree.SetActive(true);
-         WaterWarriorFour.SetActive(true);
-         WaterWarriorFive.SetActive(true);
+         WaterWarriorOne.SetActive(false);
+         WaterWarriorTwo.SetActive(false);
+         WaterWarriorThree.SetActive(false);
+         WaterWarriorFour.SetActive(false);
+         WaterWarriorFive.SetActive(false);
          WaterAssassinOne.SetActive(false);
          WaterAssassinTwo.SetActive(false);
          WaterAssassinThree.SetActive(false);
