@@ -24,7 +24,7 @@ public class AirBender : MonoBehaviour
 
     Animator anim;
     GameObject target;
-    public GameObject projectile;
+    //public GameObject projectile;
 
 
     public GameObject elementPrefab;
@@ -139,9 +139,9 @@ public class AirBender : MonoBehaviour
 
         
        //air.Play();
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity) as GameObject;
-        Tornado elementShot = projectile.GetComponent<Tornado>();
-        elementShot.setTarget(target);
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z), Quaternion.identity) as GameObject;
+        //Tornado elementShot = projectile.GetComponent<Tornado>();
+        //elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
