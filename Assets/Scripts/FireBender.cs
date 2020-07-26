@@ -25,7 +25,7 @@ bool combatState = false;
     Animator anim;
     GameObject target;
     public GameObject projectile;
-
+    ParticleSystem fire;
 
     public GameObject elementPrefab;
 
@@ -36,7 +36,7 @@ bool combatState = false;
     void Start()
     {
         anim = GetComponent<Animator>();
-
+        fire = elementPrefab.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -115,13 +115,15 @@ bool combatState = false;
     int attack()
     {
         anim.SetTrigger("PunchTrigger");
+        fire.Play();
 
-        projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f , this.transform.position.z), Quaternion.identity) as GameObject;
-        FireBall elementShot = projectile.GetComponent<FireBall>();
-         elementShot.setTarget(target);
+        //projectile = Instantiate(elementPrefab, new Vector3(this.transform.position.x, this.transform.position.y - 1.2f , this.transform.position.z), Quaternion.identity) as GameObject;
+        //FireBall elementShot = projectile.GetComponent<FireBall>();
+         //elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
 
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        
         
         //Destroy(projectile);
         
