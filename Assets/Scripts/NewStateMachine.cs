@@ -16,11 +16,11 @@ public enum currentState
 public class NewStateMachine : MonoBehaviour
 {
     private int prevScene;
-   
 
+    private Vector3[] playerPositions;
+    private Vector3[] enemyPositions;
     private GameObject[] enemyArray;
     private GameObject[] playerArray;
-    private Vector3[] playerPositions;
     //private GameObject[] playersOnBoard;
     private int enemyHP = 100;
     private int playerHP = 100;
@@ -51,6 +51,7 @@ public class NewStateMachine : MonoBehaviour
 
         if(state == currentState.BUY)
         {
+            enemyRecordPositions();
             playerRecordPositions();
         }
 
@@ -61,16 +62,30 @@ public class NewStateMachine : MonoBehaviour
         }
     }
     
+
+    Vector3[] enemyRecordPositions()
+    {
+        enemyArray = GameObject.FindGameObjectsWithTag("Enemy_Piece");
+        Vector3[] enemyPositions = new Vector3[enemyArray.Length];
+        for (int i = 0; i < enemyArray.Length; ++i)
+        {
+                enemyPositions[i] = enemyArray[i].transform.position;
+            print(enemyPositions[i]);
+        }
+        return enemyPositions;
+    }
+
+
     Vector3[]  playerRecordPositions()
     {
         playerArray = GameObject.FindGameObjectsWithTag("Player_Piece");
+        Vector3[] playerPositions = new Vector3[playerArray.Length];
         for(int i = 0; i < playerArray.Length;++i)
         {
             PlayerController instance = playerArray[i].GetComponent<PlayerController>();
             if (!instance.playerBench)
             {
                 playerPositions[i] = playerArray[i].transform.position;
-                print(playerPositions[i]);
             }
         }
         return playerPositions;
