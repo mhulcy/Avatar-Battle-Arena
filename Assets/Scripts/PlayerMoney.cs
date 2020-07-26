@@ -13,6 +13,7 @@ public class PlayerMoney : MonoBehaviour
     void Start()
     {
         playerMoney = 100;
+        moneyText.text = playerMoney.ToString();
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class PlayerMoney : MonoBehaviour
     public void addMoney(int moneyToAdd)
     {
         playerMoney += moneyToAdd;
+        moneyText.text = playerMoney.ToString();
     }
 
     public void subtractMoney(int moneyToSubtract)
@@ -35,6 +37,7 @@ public class PlayerMoney : MonoBehaviour
         else
         {
             playerMoney -= moneyToSubtract;
+            moneyText.text = playerMoney.ToString();
         }
     }
 

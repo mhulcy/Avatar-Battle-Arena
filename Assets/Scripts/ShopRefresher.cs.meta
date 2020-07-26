@@ -3,7 +3,128 @@ guid: 096f51875f3ee794098fd2a80e9fddef
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - buttons: {instanceID: 0}
+  - FireWarriorOne: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      type: 3}
+  - FireWarriorTwo: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      type: 3}
+  - FireWarriorThree: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      type: 3}
+  - FireWarriorFour: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      type: 3}
+  - FireWarriorFive: {fileID: 2105934844593678982, guid: 6f10a5da9f4556f419983fa31031b62e,
+      type: 3}
+  - FireAssassinOne: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+      type: 3}
+  - FireAssassinTwo: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+      type: 3}
+  - FireAssassinThree: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+      type: 3}
+  - FireAssassinFour: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+      type: 3}
+  - FireAssassinFive: {fileID: 6483312239768880349, guid: 62366a7fefe69c94cab24f2c8b73c74d,
+      type: 3}
+  - FireBenderOne: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+      type: 3}
+  - FireBenderTwo: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+      type: 3}
+  - FireBenderThree: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+      type: 3}
+  - FireBenderFour: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+      type: 3}
+  - FireBenderFive: {fileID: 7886486155345767721, guid: f4bbe488023a3bb4faa87d35377e90c1,
+      type: 3}
+  - WaterWarriorOne: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+      type: 3}
+  - WaterWarriorTwo: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+      type: 3}
+  - WaterWarriorThree: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+      type: 3}
+  - WaterWarriorFour: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+      type: 3}
+  - WaterWarriorFive: {fileID: 3520800829512392539, guid: 405dda81bfd7a9040a2494e7384a5e48,
+      type: 3}
+  - WaterAssassinOne: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+      type: 3}
+  - WaterAssassinTwo: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+      type: 3}
+  - WaterAssassinThree: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+      type: 3}
+  - WaterAssassinFour: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+      type: 3}
+  - WaterAssassinFive: {fileID: 3389150756822332364, guid: 48fa99006c79cb84eb5ea132c9cf6339,
+      type: 3}
+  - WaterBenderOne: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+      type: 3}
+  - WaterBenderTwo: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+      type: 3}
+  - WaterBenderThree: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+      type: 3}
+  - WaterBenderFour: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+      type: 3}
+  - WaterBenderFive: {fileID: 3460900945909919082, guid: 8ce41c32568961b4faca2cd8e2276729,
+      type: 3}
+  - EarthWarriorOne: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  - EarthWarriorTwo: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  - EarthWarriorThree: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  - EarthWarriorFour: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  - EarthWarriorFive: {fileID: 4137001748853122460, guid: 49ca51d10f427cd4fb08923a85f3695f,
+      type: 3}
+  - EarthAssassinOne: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  - EarthAssassinTwo: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  - EarthAssassinThree: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  - EarthAssassinFour: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  - EarthAssassinFive: {fileID: 2767130447686587120, guid: 887abea1cc3874c43ae669baa1417753,
+      type: 3}
+  - EarthBenderOne: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+      type: 3}
+  - EarthBenderTwo: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+      type: 3}
+  - EarthBenderThree: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+      type: 3}
+  - EarthBenderFour: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+      type: 3}
+  - EarthBenderFive: {fileID: 4736963232337073261, guid: b8a1469c870cda74e8ae14a9c1a2f9c6,
+      type: 3}
+  - AirWarriorOne: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+      type: 3}
+  - AirWarriorTwo: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+      type: 3}
+  - AirWarriorThree: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+      type: 3}
+  - AirWarriorFour: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+      type: 3}
+  - AirWarriorFive: {fileID: 8128577162668582585, guid: 954209cea1cfb174d90a49d1c9bf44d8,
+      type: 3}
+  - AirAssassinOne: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  - AirAssassinTwo: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  - AirAssassinThree: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  - AirAssassinFour: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  - AirAssassinFive: {fileID: 641505195311475700, guid: 5bc36ea346032324d97b6af79d725e59,
+      type: 3}
+  - AirBenderOne: {fileID: 1966780103761799321, guid: 5d082a6b0189fd34a82371d769cbf852,
+      type: 3}
+  - AirBenderTwo: {fileID: 1966780103761799321, guid: 5d082a6b0189fd34a82371d769cbf852,
+      type: 3}
+  - AirBenderThree: {fileID: 1966780103761799321, guid: 5d082a6b0189fd34a82371d769cbf852,
+      type: 3}
+  - AirBenderFour: {fileID: 1966780103761799321, guid: 5d082a6b0189fd34a82371d769cbf852,
+      type: 3}
+  - AirBenderFive: {fileID: 1966780103761799321, guid: 5d082a6b0189fd34a82371d769cbf852,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
