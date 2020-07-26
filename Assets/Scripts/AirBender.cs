@@ -48,15 +48,14 @@ public class AirBender : MonoBehaviour
 
         playerControls = this.GetComponent<PlayerController>();
 
-<<<<<<< HEAD
-=======
+
         if (state.state == currentState.COMBAT)
         {
             print("MICHAEL");
         }
         
      
->>>>>>> 9e0a6193119a719f03a1a5ad1c290aa5b83a26f6
+
         if (!playerControls.playerBench && combatState)
         {
                 target = findEnemy();
