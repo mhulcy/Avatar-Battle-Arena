@@ -1757,8 +1757,9 @@ GameObject:
   - component: {fileID: 2785445715425302989}
   - component: {fileID: 6004407841431029302}
   - component: {fileID: 907559421204111873}
+  - component: {fileID: 2911654249774623079}
   m_Layer: 0
-  m_Name: Air Bender 1
+  m_Name: Air Bender
   m_TagString: Player_Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,6 +1900,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 6004407841230754362}
   playerBench: 0
+--- !u!114 &2911654249774623079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966780103761799321}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17324fe48c7d314784a9067fb2e136d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
 --- !u!1 &1966780103761800743
 GameObject:
   m_ObjectHideFlags: 0

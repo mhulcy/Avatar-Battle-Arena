@@ -41,10 +41,9 @@ public class NewStateMachine : MonoBehaviour
     
     void Update()
     {
-        print(state);
+       // print(state);
         if (state == currentState.COMBAT)
         {
-           // print("Eric");
             turnOnCombat();  
             isCombatOver();
         }
@@ -155,7 +154,6 @@ public class NewStateMachine : MonoBehaviour
 
        // print("checking if combat is over");
         bool onBoard = false;
-
         enemyArray = GameObject.FindGameObjectsWithTag("Enemy_Piece");
         playerArray = GameObject.FindGameObjectsWithTag("Player_Piece");
 
@@ -181,7 +179,6 @@ public class NewStateMachine : MonoBehaviour
             }
             else if (!onBoard)
             {
-                
                 calculateDamage(2);
 
             }
