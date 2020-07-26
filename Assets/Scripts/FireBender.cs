@@ -18,6 +18,7 @@ bool combatState = false;
     int damage = 30;
     int tolerance = 5;
     float timer = 1f;
+    float fireBallTimer = 1f;
 
     Vector3 targetCoords = new Vector3(0, 0, 0);
 
@@ -41,6 +42,7 @@ bool combatState = false;
     // Update is called once per frame
     void Update()
     {
+        //fireBallTimer += time
         playerControls = this.GetComponent<PlayerController>();
         if (!playerControls.playerBench && combatState) {
             target = findEnemy();
@@ -118,9 +120,13 @@ bool combatState = false;
         FireBall elementShot = projectile.GetComponent<FireBall>();
          elementShot.setTarget(target);
         //elementShot.transform.position = target.transform.position;
-        
+
         //projectile.GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
+        
         //Destroy(projectile);
+        
+       
+        
 
         int amount;
         //print("attacks");
