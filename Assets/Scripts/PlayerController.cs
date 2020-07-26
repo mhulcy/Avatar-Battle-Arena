@@ -56,9 +56,26 @@ public class PlayerController : MonoBehaviour
 
                     }
                     _bench = null;
-                    //Find a way to get rid of this line
-                    // this.transform.position = hit.point;
+                    GameObject currBoard = findNearestBoard(this.transform.position);
+                    if(currBoard != null)
+                    {
+                        if (currBoard.GetComponent<Board_block>() != null)
+                        {
+                            Board_block instance = currBoard.GetComponent<Board_block>();
+                            instance.unOccupy();
+                        }
+                    }
+
                     this.transform.position = findBoard(hit.point);
+                    currBoard = findNearestBoard(this.transform.position);
+                    if (currBoard != null)
+                    {
+                        if (currBoard.GetComponent<Board_block>() != null)
+                        {
+                            Board_block instance = currBoard.GetComponent<Board_block>();
+                            instance.occupy();
+                        }
+                    }
                     isSelected = false;
                 }
 
@@ -89,20 +106,66 @@ public class PlayerController : MonoBehaviour
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Board");
         for (int i = 0; i < gameObjects.Length; ++i)
         {
+            if(gameObjects[i].GetComponent<Board_block>() != null){
+                Board_block instance = gameObjects[i].GetComponent<Board_block>();
+        }
             // print("found enemy");
             value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - currPos.x, 2) +
             Math.Pow(gameObjects[i].transform.position.y - currPos.y, 2) +
             Math.Pow(gameObjects[i].transform.position.z - currPos.z, 2));
-            if (value < min)
+            if (gameObjects[i].GetComponent<Board_block>() != null)
             {
-                min = value;
-                nearestBoard = new Vector3(gameObjects[i].transform.position.x, gameObjects[i].transform.position.y, gameObjects[i].transform.position.z);
+                Board_block instance = gameObjects[i].GetComponent<Board_block>();
 
+                if ((value < min) && instance.isOccupied() == false)
+                {
+                    Board_block closestBlock = instance;
+                    min = value;
+                    nearestBoard = new Vector3(gameObjects[i].transform.position.x, gameObjects[i].transform.position.y, gameObjects[i].transform.position.z);
+
+                }
             }
         }
-        print(nearestBoard);
+       // print(nearestBoard);
         return nearestBoard;
     }
+
+
+    GameObject findNearestBoard(Vector3 currPos)
+    {
+        double min = 100000;
+        Vector3 nearestBoard = this.transform.position;
+        double value;
+        GameObject board = null;
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Board");
+        if(this.playerBench == true)
+        {
+            return null;
+        }
+        for (int i = 0; i < gameObjects.Length; ++i)
+        {
+
+            // print("found enemy");
+            value = Math.Sqrt(Math.Pow(gameObjects[i].transform.position.x - currPos.x, 2) +
+            Math.Pow(gameObjects[i].transform.position.y - currPos.y, 2) +
+            Math.Pow(gameObjects[i].transform.position.z - currPos.z, 2));
+                if ((value < min))
+                {
+                    board = gameObjects[i];
+                    min = value;
+                    nearestBoard = new Vector3(gameObjects[i].transform.position.x, gameObjects[i].transform.position.y, gameObjects[i].transform.position.z);
+
+                }
+        }
+        // print(nearestBoard);
+        return board;
+    }
+
+
+
+
+
+
 
     void OnMouseDown()
     { 
